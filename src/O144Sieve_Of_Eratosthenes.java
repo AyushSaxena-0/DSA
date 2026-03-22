@@ -8,6 +8,7 @@ public class O144Sieve_Of_Eratosthenes {
     //Then we mark all the multiples of those as true as not prime
     //Then printing only false which are prime
     //False --> Means prime
+    //Time Complexity is (N*log(log N))
     static void sieve(boolean[]prime,int n){
         for(int i=2;i*i<=n;i++){
             if(!prime[i]){
