@@ -1,12 +1,14 @@
 public class O145Square_Root {
     static int prefSqr(int n){
         //Brute Force
+        //Time complexity O(N)
         for(int i=2;i<n;i++){
             if(i*i==n)return i;
         }
         return -1;
     }
     static double optimisedSqrt(int n,int p){//n is number ,p is precision required
+        //Time complexity O(logN)
         int start=0;
         int end=n;
         double root =0;
@@ -42,5 +44,6 @@ public class O145Square_Root {
         System.out.println(prefSqr(225));
         System.out.printf("%.2f",optimisedSqrt(40,2));
     }
-
+    //Newton Raphson method I dont like remembering the formulae so i have left
+    //  sqrt(N)=0.5*{x+n/x} running in while loop that breaks at
 }
