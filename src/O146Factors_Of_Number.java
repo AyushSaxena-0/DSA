@@ -25,7 +25,9 @@ public class O146Factors_Of_Number {
         for(int i=1;i<=Math.sqrt(n);i++){
             if(n%i==0){
                 System.out.print(i+" ");
-                factors.add(n/i);
+                if(n/i!=i) {
+                    factors.add(n / i);
+                }
             }
         }
         for(int i=factors.size()-1;i>=0;i--){
