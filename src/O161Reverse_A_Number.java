@@ -3,6 +3,7 @@ public class O161Reverse_A_Number {
     static int rev=0;
     static int fun(int n) {
         if (n % 10 == n) {
+            //Note 0%10=0 but it would stop at one digit wont go below
             return n;
         }
         rev= rev*10 + n%10;
