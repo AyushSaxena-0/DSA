@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class O168Remove_Duplicates_From_Sorted_Array {
     public static int removeDuplicates(int[] nums) {
         if (nums.length == 0) return 0;
-
+        //Note this step and technique
         int k = 1; // position for next unique element
 
         for (int i = 1; i < nums.length; i++) {
