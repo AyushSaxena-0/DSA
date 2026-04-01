@@ -2,9 +2,9 @@ import java.util.*;
 public class O173Leetcode_94_Binary_Tree_Inorder_Traversal {
     public static void inorder(TreeNode root,List <Integer>ans){
         if(root==null)return;
-            inorder(root.left,ans);
-            ans.add(root.val);
-            inorder(root.right,ans);
+        inorder(root.left,ans);
+        ans.add(root.val);
+        inorder(root.right,ans);
         }
         public static List<Integer> inorderTraversal(TreeNode root) {
             //Creating a global static arraylist creates problem when the inorderTravesal function is called multiple times so create a local arraylist in this function to protect from data persisting and resetting with each function call
