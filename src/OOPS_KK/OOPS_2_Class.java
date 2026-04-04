@@ -1,14 +1,24 @@
 package OOPS_KK;
+
+import java.security.spec.RSAOtherPrimeInfo;
+
 //Class which is public is used to keep java file name
     class Student{
     int rno;
     String name;
     int marks;
 //This is a parameterized constructor
-    Student(int rno,String name,int marks){
-        this.rno=rno;
-        this.name=name;
-        this.marks=marks;
+    Student(){
+        this.rno=7;
+        this.name="This is default constructor example with no inputs";
+        this.marks=76;
+    }
+    void greeting(){
+        //Object of this class can utilize this method
+        System.out.println("Hello i am demonstrating oops");
+    }
+    void name(){
+        System.out.println("Hello my name is "+this.name);
     }
 }
 
@@ -52,5 +62,12 @@ public class OOPS_2_Class {
         //2)No Argument Constructor
         //3)Parameterised Constructor
         //4)Copy Constructor
+        Student std4=new Student();
+        System.out.println(std4.rno+" "+std4.name+" "+std4.marks);
+        std4.greeting();
+        std2.name();
+        std1.name();
+        std3.name();
+
     }
 }
