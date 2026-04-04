@@ -17,6 +17,12 @@ package OOPS_KK;
         this.name=name;
         this.marks=marks;
     }
+//Copy constructor
+    Student(Student other){
+        this.rno=other.rno;
+        this.name=other.name;
+        this.marks=other.marks;
+    }
     void greeting(){
         //Object of this class can utilize this method
         System.out.println("Hello i am demonstrating oops");
@@ -79,5 +85,8 @@ public class OOPS_2_Class {
         std4.changeName("Devesh");
         std4.name();
         std5.name();
+        Student std6=new Student(std5);
+        //Copy construct is used to copy student 5 with student 6
+        System.out.println(std6.rno+" "+std6.name+" "+std6.marks);
     }
 }
