@@ -3,9 +3,14 @@ package OOPS_KK;
 class Car{
     String name;
     int cost;
+
     Car(String name,int cost){
         this.name=name;
         this.cost=cost;
+    }
+    Car(Car car){
+        this.name=car.name;
+        this.cost=car.cost;
     }
 }
 
@@ -31,5 +36,9 @@ public class OOPS_5_Final_Keyword_Implementation {
         //The variable points to same object but the value was changed of the object
         //But you cannot do Car car1=car3 as car1 is final
         System.out.println(car1.cost);
+        Car car2=new Car("Car2",100000);
+        //car1 is a final object
+        //car1 cannot be assigned to car2
+        car1=car2;
     }
 }
