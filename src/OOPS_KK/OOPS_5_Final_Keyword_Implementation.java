@@ -39,6 +39,6 @@ public class OOPS_5_Final_Keyword_Implementation {
         Car car2=new Car("Car2",100000);
         //car1 is a final object
         //car1 cannot be assigned to car2
-        car1=car2;
+        //car1=car2;
     }
 }
