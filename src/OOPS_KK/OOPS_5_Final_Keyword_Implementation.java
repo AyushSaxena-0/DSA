@@ -1,4 +1,5 @@
 package OOPS_KK;
+
 class Car{
     String name;
     int cost;
@@ -7,6 +8,7 @@ class Car{
         this.cost=cost;
     }
 }
+
 public class OOPS_5_Final_Keyword_Implementation {
     //By convention final variable is written in capital letters
     static final int A=256;
