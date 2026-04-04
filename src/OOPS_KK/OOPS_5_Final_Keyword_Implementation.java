@@ -29,6 +29,7 @@ public class OOPS_5_Final_Keyword_Implementation {
         //Look even though the reference variable was of type final
         //We could modify the value
         //The variable points to same object but the value was changed of the object
+        //But you cannot do Car car1=car3 as car1 is final
         System.out.println(car1.cost);
     }
 }
