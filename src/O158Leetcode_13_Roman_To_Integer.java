@@ -28,7 +28,7 @@ public class O158Leetcode_13_Roman_To_Integer {
         }
 
     public static void main(String[] args) {
-        System.out.println(romanToInt("IIIVVVVVVCLL"));
+        System.out.println(romanToInt("IX"));
     }
 
 }

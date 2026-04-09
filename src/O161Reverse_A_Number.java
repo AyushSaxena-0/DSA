@@ -14,10 +14,14 @@ public class O161Reverse_A_Number {
         if(n==0)return ans;
         return way2(n/10,ans*10+n%10);
     }
+    static boolean isPalindrome(int n){
+        return n==way2(n,0);
+    }
 
     public static void main(String[] args) {
         System.out.println(fun(123456789));
         System.out.println(way2(123456789,0));
+        System.out.println(isPalindrome(121));
     }
 
 }

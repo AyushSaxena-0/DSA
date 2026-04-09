@@ -8,6 +8,7 @@ public class O155Recursion_Product_of_Numbers_Till_N {
     }
 
     public static void main(String[] args) {
+
         System.out.println(fun1(5));
     }
 }
