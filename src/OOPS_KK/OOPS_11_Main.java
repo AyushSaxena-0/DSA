@@ -1,6 +1,6 @@
 package OOPS_KK;
 
-public class Main {
+public class OOPS_11_Main {
     public static void main(String[] args) {
         Singleton obj=Singleton.getInstance();
         Singleton obj1=Singleton.getInstance();
