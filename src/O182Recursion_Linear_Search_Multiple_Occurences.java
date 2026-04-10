@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class O182Recursion_Linear_Search_Multiple_Occurences {
+    //In this we are modifying the list by passing it in the next parameter
     static ArrayList<Integer>linearSearch(int[]arr,int index,int target,ArrayList<Integer> list){
         if(index==arr.length){
             return list;
