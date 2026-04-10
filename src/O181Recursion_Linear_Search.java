@@ -1,4 +1,5 @@
 public class O181Recursion_Linear_Search {
+    //This function is for first occurrence
     static int helper(int[]arr,int index,int target){
         if(index==arr.length){
             return -1;
