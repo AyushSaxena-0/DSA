@@ -10,6 +10,19 @@ public class O187Recursion_Triangle {
             tri1(row-1,row-1);
         }
     }
+    //Alter print after recursion
+    static void tri3(int row,int col){
+        if(row<0)return;
+        if(col>=0){
+            tri3(row,col-1);
+            System.out.print("*");
+
+        }
+        if(col<0){
+            tri3(row-1,row-1);
+            System.out.println();
+        }
+    }
 
     static void tri2(int row,int col,int target){
         if(row>target)return;
@@ -26,5 +39,7 @@ public class O187Recursion_Triangle {
         tri1(3,3);
         System.out.println();
         tri2(0,0,3);
+        System.out.println();
+        tri3(3,3);
     }
 }
