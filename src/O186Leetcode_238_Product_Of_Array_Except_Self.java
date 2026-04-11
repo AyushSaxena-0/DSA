@@ -31,7 +31,7 @@ public class O186Leetcode_238_Product_Of_Array_Except_Self {
         return ans;
     }
     public static int[] productExceptSelf2(int[] nums) {
-        //This is optimised approach by using prefix product and suffix product
+        //This is optimized approach by using prefix product and suffix product
         //Calculating prefix product
         int n=nums.length;
         int[]ans=new int[n];
