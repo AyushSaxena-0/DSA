@@ -5,10 +5,7 @@ public class O186Leetcode_238_Product_Of_Array_Except_Self {
         //For Special Case
         int prod=1;
         for(int i=0;i<nums.length;i++){
-            if(i==index){
-                continue;
-            }
-            else{
+            if(i!=index){
                 prod=prod*nums[i];
             }
         }
