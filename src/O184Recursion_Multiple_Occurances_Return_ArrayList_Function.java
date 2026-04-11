@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class O184Recursion_Multiple_Occurances_Return_ArrayList_Function {
+    //Returning list but not taking as an argument
     static ArrayList<Integer> findOccurences(int[]arr,int target,int index){
         ArrayList<Integer> ans = new ArrayList<>();
         if(index==arr.length){
