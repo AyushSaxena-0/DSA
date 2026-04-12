@@ -38,6 +38,7 @@ public class DP_2_Leetcode_746_Minimum_Cost_Climbing_Stairs {
         dp[1]=cost[1];
         //Using iterative dp
         for(int i=2;i<dp.length;i++){
+            //Alter you don't need an array you just need last two numbers
             dp[i]=cost[i]+Math.min(dp[i-1],dp[i-2]);
         }
         //This is bottom up dp
