@@ -10,7 +10,11 @@ public class DP_4_Leetcode_198_House_Robber {
         dp[1]=Math.max(nums[1],nums[0]);
         //Now using iterative dp
         for(int i=2;i<nums.length;i++){
-            dp[i]=Math.max(nums[i]+dp[i-2],dp[i-1]);
+            //Pick or skip
+            //Consecutive cannot be picked
+            int take=nums[i]+dp[i-2];
+            int skip=dp[i-1];
+            dp[i]=Math.max(take,skip);
         }
         return dp[nums.length-1];
     }
