@@ -43,6 +43,9 @@ public class O189Merge_Sort {
         }
         //Copying these elements in the original array at the index used
         //So that no elements are lost
+        //Or use Arrays.copyOfRange(arr,source,destination)
+        //                              inclusive exclusive
+        //Or use System.arraycopy(sorted,0,nums,start,sorted.length)
         for(int x=0;x<sorted.length;x++){
             nums[start+x]=sorted[x];
         }
