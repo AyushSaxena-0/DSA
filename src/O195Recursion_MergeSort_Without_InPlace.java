@@ -12,8 +12,7 @@ public class O195Recursion_MergeSort_Without_InPlace {
         //Calculating right array
         int[]right=mergeSort(nums,mid+1,end);
 
-        int[]sorted=merge(left,right);
-        return sorted;
+        return merge(left,right);
     }
     static int[]merge(int[]left,int[]right){
 
