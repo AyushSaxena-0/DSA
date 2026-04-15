@@ -22,8 +22,7 @@ public class O192Leetcode_144_Binary_Tree_PreOrder_Traversal {
         root.left.right = new TreeNode(5);
         root.right.left = new TreeNode(6);
         root.right.right = new TreeNode(7);
-        ArrayList<Integer>list=new ArrayList<>();
-        pre(root,list);
-        System.out.println(list);
+
+        System.out.println(preorderTraversal(root));
     }
 }
