@@ -1,6 +1,9 @@
 import java.util.Arrays;
 
 public class O195Recursion_MergeSort_Without_InPlace {
+    //Alter use int[] left=Arrays.copyOfRange(nums,start,mid)
+    //          int[] right=Arrays.copyOfRange(nums,mid,arr.length);
+    //in above arrays.copyofrange function the exit boundary is exclusive of element
     static int[] mergeSort(int[]nums,int start,int end){
         if (start == end) {
             return new int[]{nums[start]};
