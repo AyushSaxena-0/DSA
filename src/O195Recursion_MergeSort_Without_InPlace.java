@@ -42,7 +42,10 @@ public class O195Recursion_MergeSort_Without_InPlace {
         }
         return sorted;
     }
-
+    //Time Complexity
+    //Since at every level N elements are merged
+    //And there are total Log N level
+    //So the time complexity becomes O(N*LogN)
     public static void main(String[] args) {
         int[]nums={6,5,4,3,2,1};
         System.out.println(Arrays.toString(mergeSort(nums,0,nums.length-1)));
