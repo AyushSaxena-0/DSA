@@ -1,7 +1,9 @@
 import java.util.ArrayList;
 
 public class O203Subsequence_ArrayList {
-
+    //Dry Run this code to understand what and how is happening
+    //I admit it is really tough to see through recursion
+    //Debug this code and see how it works for visual clarity
     static ArrayList<String>subseq(String p,String q,ArrayList<String>list){
         if(p.isEmpty()){
             list.add(q);
