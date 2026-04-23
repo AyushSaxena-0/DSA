@@ -16,6 +16,6 @@ public class O198Recursion_Subsets_and_Subsequences_Introduction {
     }
 
     public static void main(String[] args) {
-        subseq("Ayush","");
+        subseq("abc","");
     }
 }

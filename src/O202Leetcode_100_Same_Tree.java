@@ -1,4 +1,6 @@
 public class O202Leetcode_100_Same_Tree {
+    //Ironically on this problem I completed my 100th leetcode question
+    //And the question number is 100 itself lol
     public static boolean isSameTree(TreeNode p, TreeNode q) {
         if(p==null&&q==null)return true;
         if (p == null || q == null) {
