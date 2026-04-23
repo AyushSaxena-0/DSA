@@ -1,4 +1,4 @@
-public class O198Recursion_Subsets_and_Subsequences_Introduction {
+public class O198Recursion_Subsets_and_Subsequences_Introduction_Using_2_Parameters {
     //Subsets include non-adjacent collection
     //Subset is for array and subsequence is for string
     //This pattern of taking some elements and removing some is known as subset problem
