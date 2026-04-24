@@ -24,9 +24,10 @@ public class O198Recursion_Subsets_and_Subsequences_Introduction_Using_2_Paramet
             return list;
         }
         //Pick the element
-        ArrayList<String>left= subseq2(str.substring(1),ans+str.charAt(0));
+        //Whenever you are not passing an arraylist you need to store value in arraylists
+        ArrayList<String>left=subseq2(str.substring(1),ans+str.charAt(0));
         //Skip the element
-        ArrayList<String>right= subseq2(str.substring(1),ans);
+        ArrayList<String>right=subseq2(str.substring(1),ans);
 
         //Adding all the elements in one list and then returning
         left.addAll(right);
