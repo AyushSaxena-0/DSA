@@ -14,6 +14,8 @@ public class O208Subsequence_ArrayList_Of_ArrayLists {
                 //Note this way of creating a new arraylist as it creates a clone or copy of orignal arraylist in the outer list
                 //Otherwise we would be modifying the original list places breaking our code
                 ArrayList<String> temp = new ArrayList<>(outer.get(j));
+                //Note we are not taking a loop as all the arraylist before cover all the cases already
+                //Hence don't get confused we are only required to add the string character at the end of each temporary arraylist to add in the outer arraylist
                 temp.add(str.charAt(i) + "");
                 outer.add(temp);
             }
