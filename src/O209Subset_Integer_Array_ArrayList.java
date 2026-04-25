@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 
 public class O209Subset_Integer_Array_ArrayList {
+    //Time Complexity is
+    //O(N*2^N)
+    //Space Complexity
+    //O(N*2^N)
     public static ArrayList<ArrayList<Integer>>subIn(int[]arr){
         ArrayList<ArrayList<Integer>>outer=new ArrayList<>();
         outer.add(new ArrayList<>());
