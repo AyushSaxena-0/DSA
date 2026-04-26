@@ -23,7 +23,9 @@ public class O212Subsequence_With_Repepitition {
                 //So for duplicates, you only extend those
                 start=end+1;
             }
-            end=outer.size()-1;
+            // 'end' retains its value from the previous iteration,
+            // so it marks the last index of subsets before the current expansion
+             end=outer.size()-1;
             for(int j=start;j<=end;j++){
                 ArrayList<Integer>temp=new ArrayList<>(outer.get(j));
                 temp.add(arr[i]);
@@ -34,6 +36,6 @@ public class O212Subsequence_With_Repepitition {
     }
 
     public static void main(String[] args) {
-        System.out.println(subRep(new int[]{1,2,3,3,4,4,5}));
+        System.out.println(subRep(new int[]{1,2,2}));
     }
 }
