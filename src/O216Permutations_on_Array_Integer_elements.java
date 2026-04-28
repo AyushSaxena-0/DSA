@@ -8,7 +8,8 @@ public class O216Permutations_on_Array_Integer_elements {
             return;
         }
 
-
+        //Understand and note this logic of backtracking
+        //This is very counterintuitive
         //Now writing the logic
         for(int i=0;i<nums.length;i++){
             if(visited[i])continue;
