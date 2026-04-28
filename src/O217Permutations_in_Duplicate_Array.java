@@ -7,7 +7,7 @@ import java.util.ArrayList;
                 ans.add(new ArrayList<>(path));
                 return;
             }
-//Now i am looping and would ignore same
+//Now I am looping and would ignore same
 //I have already sorted the nums for collecting same elements consecutively
             for (int i = 0; i < nums.length; i++) {
                 if (visited[i]) continue;
