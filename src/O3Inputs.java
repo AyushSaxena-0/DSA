@@ -5,6 +5,7 @@ public class O3Inputs {
         System.out.println("Please enter some input number");
         //Print integer
         int rollno=input.nextInt();
+        //It is used to consume the ENTER key in the buffer
         input.nextLine();
         System.out.println("Your roll number is: "+ rollno);
         //Print string
@@ -22,4 +23,4 @@ public class O3Inputs {
 //nextInt() → nextLine()	add extra nextLine()
 //nextLine() → nextInt()	no problem
 //Multiple numbers	no issue
-//String after number	buffer clear required
+//String after number buffer clear required
