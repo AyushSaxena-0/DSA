@@ -1,6 +1,5 @@
 public class O10Loops {
     public static void main(String[] args){
-
         //print numbers from 1 to 1000
     //using while loop
     int count=0;
