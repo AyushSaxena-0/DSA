@@ -8,14 +8,14 @@ public class O11Largest_Of_Three_Numbers {
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        if (a > b && a > c) {
+        if (a >= b && a >= c) {
             System.out.println("A is the largest number");
         }
-        else if (b > a && b > c) {
+        else if (b >= a && b >= c) {
             System.out.println("B is the largest number");
 
     }
-        else if (c > a && c > b) {
+        else {
             System.out.println("C is the largest number");
         }
 
