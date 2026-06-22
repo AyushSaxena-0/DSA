@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class O13Fibonacci_Series {
     static int fib(int n){
+        if(n<0)return -1;
         if(n<=1){
             return n;
         }
@@ -16,6 +17,7 @@ public class O13Fibonacci_Series {
         }
     }
     static int fibrec(int n){
+        if (n<0)return -1;
         if (n<=1){
             return n;
         }
@@ -25,6 +27,7 @@ public class O13Fibonacci_Series {
     }
 
     static int kk(int n){
+        if (n<0)return -1;
         if (n <= 1) {
             return n;
         }
