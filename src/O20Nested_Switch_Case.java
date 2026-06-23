@@ -17,6 +17,8 @@ public class O20Nested_Switch_Case {
 //                break;
 //            case 3:
 //                System.out.println("Employee 3");
+//                System.out.print("Enter Department: ");
+//                String depart = sc.next();
 //                switch(depart) {
 //                    case "IT":
 //                        System.out.println("High Scope");

@@ -14,6 +14,7 @@ public class O17Switch_Case {
 //        }
 //        if (fruit.equals("apple")){
 //            System.out.println("A sweet red fruit");
+        System.out.println("Please enter the fruit");
         Scanner sc=new Scanner(System.in);
         String fruit=sc.next();
 //Press alt + enter on switch to change normal switch to enhanced switch
@@ -25,6 +26,5 @@ public class O17Switch_Case {
         }
 
     }
-
 
 }
