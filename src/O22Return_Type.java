@@ -44,12 +44,12 @@ public class O22Return_Type {
     }
 
     static float percentage(float obtained,float total){
-        return ((float)obtained/total)*100;
+        return (obtained/total)*100;
         //float can be a return type
     }
 
     static double percentage_2(double obtained,double total){
-        return ((double)obtained/total)*100;
+        return (obtained/total)*100;
         //double can be a return type
     }
 
@@ -71,7 +71,9 @@ public class O22Return_Type {
         String name;
         //Overriding means overwriting an existing method
         @Override
+        //Method
         public String toString() {
+
             return "Student{id=" + id + ", name='" + name + "'}";
         }
     }
