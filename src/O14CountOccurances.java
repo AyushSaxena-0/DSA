@@ -1,10 +1,10 @@
 import java.util.Scanner;
 public class O14CountOccurances {
-    public static void main(String[] args){
-//        //For in an array
+    public static void main(String[] args) {
+//        //Forming an array
 //        int [] arr={1,2,3,4,1,2,3,4,5,6,5,5,5,5,5};
 //        Scanner sc=new Scanner(System.in);
-//        System.out.println("Enter the number whose occurance is to be counted");
+//        System.out.println("Enter the number whose occurrence is to be counted");
 //        int target=sc.nextInt();
 //        int freq=0;
 //        for(int i=0;i<arr.length;i++){
@@ -13,7 +13,7 @@ public class O14CountOccurances {
 //            }
 //        }
 //        System.out.println(freq);
-        //For occurance in a number
+        //For occurrence in a number
 //        long num=12347885555555L;
 //        Scanner sc=new Scanner(System.in);
 //        long target=sc.nextInt();
@@ -22,11 +22,9 @@ public class O14CountOccurances {
 //            long d=num%10;
 //            if (d == target) {
 //                count++;
+//    }
 //                num=num/10;
 //            }
-//            else{
-//                num=num/10;
-//                }
 //            }
 //        System.out.println(count);
 //String method convert the number into string and iiterate through each charecter to find frequency
@@ -41,16 +39,5 @@ public class O14CountOccurances {
             }
         }
         System.out.println(count);
-
-
-
-
-
-
-
-
-
-
-
     }
 }

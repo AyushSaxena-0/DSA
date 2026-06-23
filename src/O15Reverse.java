@@ -6,7 +6,7 @@ public class O15Reverse {
 //    String reversed=new StringBuilder(n).reverse().toString();
 //    long rev_num=Long.parseLong(reversed);
 //    System.out.println(rev_num);
-        //using logical meathod
+//    Using logical meathod
 
         long ans=0L;
         while(number>0){
@@ -14,10 +14,6 @@ public class O15Reverse {
             number=number/10;
         }
         System.out.println(ans);
-
-
-
-
 
     }
 }
