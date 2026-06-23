@@ -48,6 +48,5 @@ public class O20Nested_Switch_Case {
             }
             default -> System.out.println("Wrong input");
         }
-
     }
 }
