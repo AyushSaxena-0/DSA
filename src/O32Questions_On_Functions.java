@@ -39,6 +39,7 @@ public class O32Questions_On_Functions {
 
     public static void main(String[] args) {
 
+        System.out.println("Enter the number to check if it is Prime and ArmStrong number");
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
 
