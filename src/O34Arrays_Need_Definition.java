@@ -27,7 +27,7 @@ public class O34Arrays_Need_Definition {
         //Arrays objects are stored in heap
         //Heap objects are non continuos
         //Dynamic memory allocation
-        //Hence array objects in java may not be continuos
+        //Hence array objects in java may not be continuous
         //Index in array start from 0
         //Arrays are mutable
         rnos[0]=45;
