@@ -28,6 +28,5 @@ public class O47Search_In_2D_Array {
         };
         System.out.println(Arrays.toString(search(arr,12)));
 
-
     }
 }
