@@ -1,7 +1,8 @@
 public class O53Leetcode_744_Find_The_Smallest_Number_Greater_Than_Target {
    // https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/
     static char ceil(char[]letters,char target) {
-    //Note character is already a number so we can use the same logic as 051Ceiling_of_number
+
+        //Note character is already a number so we can use the same logic as 051Ceiling_of_number
             int start = 0;
             int end = letters.length - 1;
 
