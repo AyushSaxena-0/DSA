@@ -76,6 +76,7 @@ public class O50Binary_Search {
         return -1;
     }
     static int binarysearch4(int[] arr, int target, int start, int end) {
+        //Order Agnostic Binary Search
         if (arr == null || arr.length == 0) {
             return -1;
         }
