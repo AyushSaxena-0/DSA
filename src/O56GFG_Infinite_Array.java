@@ -12,8 +12,9 @@ public class O56GFG_Infinite_Array {
                 end=mid-1;
             }
         }
-       return -1;
+        return -1;
     }
+    //Now note that we do not need to apply binary search in each window, we just need to check the last number in the window if it is smaller than the target and the array bound then move ahead (Note since it is and infinite array i cannot directly use the arr.length
     static int infinite(int[]arr,int target){
         int start=0;
         int end=1;
@@ -23,11 +24,11 @@ public class O56GFG_Infinite_Array {
             end=end*2;
             start=newstart;
         }
-    return binarysearch(arr,target,start,Math.min(end,arr.length));
+        return binarysearch(arr,target,start,Math.min(end,arr.length));
     }
     public static void main(String[] args) {
-    int[]arr={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
-    int target=19;
-    System.out.println(infinite(arr,target));
+        int[]arr={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+        int target=19;
+        System.out.println(infinite(arr,target));
     }
 }
