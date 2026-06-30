@@ -5,6 +5,11 @@ public class O57Leetcode_7_Reverse_Integer {
         while(x!=0){
             once=x%10;
             x=x/10;
+
+            //rev>Integer.MAX_VALUE then it would already exceed as rev is also an integer
+            //keeping more weight on bridge than limit then checking limit... too late... it would collapse
+            //Its like putting more glass in glass then volume and then measuring if it is larger than limit...too late the water has already spilled out
+
             if(rev>Integer.MAX_VALUE/10 ||(rev==Integer.MAX_VALUE/10 && once>7)){
                 return 0;
             }
@@ -18,6 +23,7 @@ public class O57Leetcode_7_Reverse_Integer {
     }
 
     public static void main(String[] args) {
+
         System.out.println(reverse(-12345));
     }
 }
