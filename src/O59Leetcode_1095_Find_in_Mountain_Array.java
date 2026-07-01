@@ -1,4 +1,4 @@
-public class O59Leetcode_Find_in_Mountain_Array {
+public class O59Leetcode_1095_Find_in_Mountain_Array {
 
     // STEP 1: Find peak index
     private static int findPeak(int[] arr) {
@@ -60,5 +60,6 @@ public class O59Leetcode_Find_in_Mountain_Array {
 
         System.out.println("Target index: " + index);
         System.out.println("Target value: " + nums[index]);
+
     }
 }
