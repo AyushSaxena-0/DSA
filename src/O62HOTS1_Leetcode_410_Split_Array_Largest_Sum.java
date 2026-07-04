@@ -1,4 +1,6 @@
 public class O62HOTS1_Leetcode_410_Split_Array_Largest_Sum {
+
+
     //Minimum answer is maximum element in array
     //Max answer is sum of all elements in Array
     //The answer is in range [max,sum of elements]
@@ -8,6 +10,8 @@ public class O62HOTS1_Leetcode_410_Split_Array_Largest_Sum {
     //mid=(10+32)/2=21
     // [7,2,5,8,10]
     // if (pieces<=m) end=mid
+
+
     public static int max(int[] nums){
         int max=Integer.MIN_VALUE;
         for(int i :nums){
