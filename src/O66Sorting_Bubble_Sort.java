@@ -1,12 +1,13 @@
 import java.util.Arrays;
 
 public class O66Sorting_Bubble_Sort {
-//Works only if both are not equal and integer are small , otherwise may overflow so use temp to swap
-//    public static void swap(int[] arr,int i,int j){
-//        arr[i]=arr[i]+arr[j];
-//        arr[j]=arr[i]-arr[j];
-//        arr[i]=arr[i]-arr[j];
-//    }
+
+        //Works only if both are not equal and integer are small , otherwise may overflow so use temp to swap
+        //    public static void swap(int[] arr,int i,int j){
+        //        arr[i]=arr[i]+arr[j];
+        //        arr[j]=arr[i]-arr[j];
+        //        arr[i]=arr[i]-arr[j];
+        //    }
 
     //It is also known as Sinking sort or Exchange Sort
     public static void swap(int[] arr, int i, int j) {
@@ -37,7 +38,7 @@ public class O66Sorting_Bubble_Sort {
             if(!swapped)break;// !false=true
         }
     }
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int[]arr={-2,-1,-32,0};
         bubblesort(arr);
         System.out.println(Arrays.toString(arr));
