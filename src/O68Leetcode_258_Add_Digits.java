@@ -35,6 +35,11 @@ public class O68Leetcode_258_Add_Digits {
 //    }
 //    return num;
 //}
+/*A property of numbers is:
+The repeated sum of digits (digital root) has the same remainder when divided by 9.
+Example:
+38
+38 % 9 = 2*/
     public static void main(String[] args) {
         int num=23;
         System.out.println(addDigits(num));
