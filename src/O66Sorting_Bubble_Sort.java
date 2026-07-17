@@ -42,5 +42,5 @@ public class O66Sorting_Bubble_Sort {
         bubblesort(arr);
         System.out.println(Arrays.toString(arr));
     }
-    }
+}
 
