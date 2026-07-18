@@ -32,7 +32,7 @@ public class O220Leetcode_1979_Find_GCD {
         return gcd(max,min);
     }
 
-    public static void main() {
+    public static void main(String[] args) {
         int[] nums={2,6,7,8,9,100};
         System.out.println(findGCD(nums));
     }
