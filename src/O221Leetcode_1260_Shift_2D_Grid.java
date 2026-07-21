@@ -6,6 +6,7 @@ public class O221Leetcode_1260_Shift_2D_Grid {
         for(int i=0;i<k;i++){
             int[][] ans = new int[grid.length][];
             for (int l = 0; l < grid.length; l++) {
+                //Learn how to copy a 2D Array
                 ans[l] = Arrays.copyOf(grid[l], grid[l].length);
             }
             for(int row=0;row<grid.length;row++){
