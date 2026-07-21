@@ -27,6 +27,23 @@ public class O78Leetcode_3232_Find_If_Digit_Game_Can_Be_Won {
             if(s==d)return false;
             return true;
         }
+        /*
+        public boolean canAliceWin(int[] nums) {
+        int sDigitSum=0;
+        int dDigitSum=0;
+
+        for(int n:nums){
+            if(n>9){
+                dDigitSum=dDigitSum+n;
+            }
+            else{
+                sDigitSum=sDigitSum+n;
+            }
+        }
+
+        return dDigitSum!=sDigitSum;
+    }
+         */
 
         public static void main(String[] args) {
             int[]nums={1,22,34,9,9,9,9,9,9,9,9,9,9,9};
