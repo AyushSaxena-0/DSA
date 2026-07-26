@@ -2,17 +2,21 @@ public class O224Leetcode_62_Unique_Paths {
     public static int uniquePaths(int m, int n) {
         //I am going to solve it using Dynamic Programming
         int[][]dp=new int[m][n];
+        //Filling the dp array first column by 1
         for(int i=0;i<m;i++){
             dp[i][0]=1;
         }
+        //Filling the first row by 1
         for(int i=0;i<n;i++){
             dp[0][i]=1;
         }
+        //Using relation dp[i][j]=dp[i-1][j]+dp[i][j-1];
         for(int i=1;i<m;i++){
             for(int j=1;j<n;j++){
                 dp[i][j]=dp[i][j-1]+dp[i-1][j];
             }
         }
+        //The last cell gives the value of total ways to reach to that cell
         return dp[m-1][n-1];
     }
 
