@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class O81Leetcode_2947_Find_Words_Containing_Character {
+public class O81Leetcode_2942_Find_Words_Containing_Character {
     public static List<Integer> findWordsContaining(String[] words, char x) {
         List<Integer> answer=new ArrayList<>();
         for(int i=0;i<words.length;i++){
