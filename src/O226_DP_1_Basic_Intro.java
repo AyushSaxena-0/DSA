@@ -1,6 +1,4 @@
-package Dynamic_Programming;
-
-public class DP_1_Basic_Intro {
+public class O226_DP_1_Basic_Intro {
 
     //DP stands for Dynamic programming
     //It is a misleading name because mathematics was not considered good at that time

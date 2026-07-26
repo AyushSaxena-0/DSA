@@ -1,6 +1,4 @@
-package Dynamic_Programming;
-
-public class DP_4_Leetcode_198_House_Robber {
+public class O229_DP_4_Leetcode_198_House_Robber {
     public static int rob(int[] nums) {
         if(nums.length==1)return nums[0];
         if(nums.length==2)return Math.max(nums[0],nums[1]);

@@ -1,8 +1,6 @@
-package Dynamic_Programming;
-
 import java.util.Arrays;
 
-public class DP_2_Leetcode_746_Minimum_Cost_Climbing_Stairs {
+public class O227_DP_2_Leetcode_746_Minimum_Cost_Climbing_Stairs {
     public static int recMinCost(int[]cost, int index){
         //This is a recursive solution
         if(index<=1)return cost[index];

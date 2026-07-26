@@ -1,6 +1,4 @@
-package Dynamic_Programming;
-
-public class DP_5_Leetcode_213_House_Robber_2 {
+public class O230_DP_5_Leetcode_213_House_Robber_2 {
     public static int house(int[]nums,int start,int end){
         int len=end-start+1;
         if(len==1)return nums[start];

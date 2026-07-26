@@ -1,6 +1,4 @@
-package Dynamic_Programming;
-
-public class DP_6_Friends_Pairing_Problem {
+public class O231_DP_6_Friends_Pairing_Problem {
     public static long helper(int n,long[]dp){
         if(n==1)return 1;
         if(n==2)return 2;

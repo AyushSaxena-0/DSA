@@ -1,6 +1,4 @@
-package Dynamic_Programming;
-
-public class DP_3_Leetcode_1137_N_th_Tribonacci_Number {
+public class O228_DP_3_Leetcode_1137_N_th_Tribonacci_Number {
     public static int tribonacci(int n) {
         //Solving it by using iterative dp
         if(n==0)return 0;
