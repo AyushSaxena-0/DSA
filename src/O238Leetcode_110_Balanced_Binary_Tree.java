@@ -15,7 +15,6 @@ public class O238Leetcode_110_Balanced_Binary_Tree {
         //This is to check for each subtree
         return isBalanced(root.left)&&isBalanced(root.right);
     }
-
     static void main() {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
