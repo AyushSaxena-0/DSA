@@ -22,7 +22,6 @@ public class O238Leetcode_110_Balanced_Binary_Tree {
         root.right = new TreeNode(3);
         root.left.left = new TreeNode(4);
         root.left.right = new TreeNode(5);
-
         System.out.println(isBalanced(root));
     }
 }
