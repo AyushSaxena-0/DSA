@@ -12,6 +12,7 @@ public class O89Selection_Sort {
         return min;
     }
     public static void swap(int[] nums,int i,int j){
+        //It is call by reference type as it is array
         int temp=nums[i];
         nums[i]=nums[j];
         nums[j]=temp;
@@ -25,8 +26,8 @@ public class O89Selection_Sort {
         //Best case O(N^2)
         //Not a stable sorting algorithm
         //Because look below example
-        //Before sorting (5a), 3, (5b), 2
-        //After sorting 2, 3, (5a), (5b)
+        // Before sorting: (5a), (5b), 3
+        // After first swap: 3, (5b), (5a)
 
         for(int i=0;i<nums.length-1;i++){
             int min=minele(nums,i,nums.length-1);
