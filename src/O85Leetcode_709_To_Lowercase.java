@@ -5,7 +5,7 @@ public class O85Leetcode_709_To_Lowercase {
 
     }
     public static void main(String[] args) {
-    String s="hello  AYUSH you are DUMB";
+        String s="hello  AYUSH you are DUMB";
         System.out.println(toLowerCase(s));
     }
 }

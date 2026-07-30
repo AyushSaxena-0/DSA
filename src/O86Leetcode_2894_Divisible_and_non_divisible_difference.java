@@ -12,6 +12,20 @@ public class O86Leetcode_2894_Divisible_and_non_divisible_difference {
         }
         return num1-num2;
     }
+    /*
+    public int differenceOfSums(int n, int m) {
+        // Sum of 1 to n
+        int totalSum = n * (n + 1) / 2;
+        // Count of multiples of m
+        int k = n / m;
+        // Sum of multiples of m
+        int num2 = m * k * (k + 1) / 2;
+        // Sum of non-multiples
+        int num1 = totalSum - num2;
+        // Required difference
+        return num1 - num2;
+    }
+     */
 
     public static void main(String[] args) {
         int n=10;
