@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class O242Leetcode_113_Path_Sum {
+public class O242Leetcode_113_Path_Sum_2 {
     public static void helper(TreeNode root, int targetSum, int currSum, List<List<Integer>>ans, List<Integer>path){
         //This is the base case
         if(root==null)return;
