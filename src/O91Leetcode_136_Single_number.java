@@ -1,6 +1,9 @@
 public class O91Leetcode_136_Single_number {
     public static int singleNumber(int[] nums) {
         int ans=0;
+        //Properties
+        //a^a=0
+        //a^0=a
         for(int num :nums){
             ans=num^ans;
         }
