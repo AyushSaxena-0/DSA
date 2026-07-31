@@ -19,15 +19,26 @@ public class O90InsertionSort {
             int j=i+1;
             while(j>0 && arr[j]>arr[j-1]){
             //Or use a for loop from j=i+1 till j>0 and do j--
-                  swap(arr,j,i);
+                  swap(arr,j,j-1);
                   j--;
             }
      }
+    }
+    public static void insertionSort2(int[]arr){
+        for(int i=0;i<arr.length-1;i++){
+            int j=i+1;
+            while(j>0 && arr[j]<arr[j-1]){
+                swap(arr,j,j-1);
+                j--;
+            }
+        }
     }
 
     public static void main(String[] args) {
         int[] arr={5,4,3,2,1};
         insertionSort(arr);
-        System.out.println(Arrays.toString(arr));
+        System.out.println("Descending "+Arrays.toString(arr));
+        insertionSort2(arr);
+        System.out.println("Ascending "+Arrays.toString(arr));
     }
 }
