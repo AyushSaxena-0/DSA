@@ -6,7 +6,7 @@ public class O90InsertionSort {
     //And larger element goes to right
     //For every index put the element at the correct index at its left
     public static void swap(int[]arr,int i, int j){
-        int temp=arr[i];
+         int temp=arr[i];
          arr[i]=arr[j];
          arr[j]=temp;
     }
