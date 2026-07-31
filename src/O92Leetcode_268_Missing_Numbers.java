@@ -2,6 +2,8 @@ public class O92Leetcode_268_Missing_Numbers {
     //n would be one more than length of current array
     // as one mor element would give us nums.length-1+1=nums.length as value of n
     public static int missingNumber(int[] nums) {
+        //Alternative is x or each element in array then xor again but with integers till n
+        //you would get the resultant as answer
         int sum=0;
         int n=nums.length;
         for(int num:nums){
