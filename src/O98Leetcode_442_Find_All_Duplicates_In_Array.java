@@ -1,7 +1,9 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-public class O98Leetcode_Find_All_Duplicates_In_Array {
+public class O98Leetcode_442_Find_All_Duplicates_In_Array {
     public static void swap(int[]arr,int i,int j){
         //I keep doing mistake in swap function
         //Do carefully
@@ -45,9 +47,25 @@ public class O98Leetcode_Find_All_Duplicates_In_Array {
         }
         return ans;
     }
+    //Alternative use Hashmap to keep visited and if again is found then append in list
+    public static List<Integer> findDuplicates2(int[] nums) {
+        //I am going to solve it by using Hashmap
+        Map<Integer,Integer> map=new HashMap<>();
+        List<Integer>ans=new ArrayList<>();
+        for(int num:nums){
+            if(map.containsKey(num)){
+                ans.add(num);
+            }
+            else{
+                map.put(num,1);
+            }
+        }
+        return ans;
+    }
 
     public static void main(String[] args) {
         int[] nums={5,4,3,2,1,1,4,5};
         System.out.println(findDuplicates(nums));
+        System.out.println(findDuplicates2(nums));
     }
 }
