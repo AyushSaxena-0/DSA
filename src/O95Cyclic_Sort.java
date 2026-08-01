@@ -14,6 +14,7 @@ public class O95Cyclic_Sort {
         int index=0;
         while(index<arr.length){
             if(index!=arr[index]-1){
+                //Swapping the element to its correct position
                 swap(arr,index,arr[index]-1);
             }
             else{
