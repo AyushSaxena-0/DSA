@@ -1,4 +1,4 @@
-public class O248LeetCode_486_Predict_The_Winner {
+public class O248Leetcode_486_Predict_The_Winner {
     public static int helper(int[]nums,int left,int right){
         //This is the base case
         if(left==right)return nums[left];
