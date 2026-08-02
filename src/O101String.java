@@ -14,7 +14,7 @@ public class O101String {
         //No. Because you cannot change strings.
         //Strings are immutable in nature
         //For security reasons
-        //If you want to change then create a new object
+        // If you want to change then create a new object
         System.out.println(b);
         System.out.println(c);
 
