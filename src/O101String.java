@@ -9,7 +9,7 @@ public class O101String {
         String b="Kunal Kushwaha";
         String c="Kunal Kushwaha";
         //Both b and c are pointing to the same object
-        // in memory Kunal Kushwaha
+        //In memory Kunal Kushwaha
         //If you change one object then other would be changed?
         //No. Because you cannot change strings.
         //Strings are immutable in nature
