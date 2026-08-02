@@ -1,4 +1,4 @@
-class Car{
+/*class Car{
     String name;
     int cost;
 
@@ -40,3 +40,4 @@ public class OOPS_5_Final_Keyword_Implementation {
         //car1=car2;
     }
 }
+*/

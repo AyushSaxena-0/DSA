@@ -1,4 +1,4 @@
-class Test1{
+/*class Test1{
     String a;
 
     Test1(String a){
@@ -26,3 +26,4 @@ public class OOPS_8_InnerClass {
         }
     }
 }
+*/

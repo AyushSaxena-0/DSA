@@ -1,4 +1,4 @@
-package com.Ayush;
+/*package com.Ayush;
 
 public class OOPS_9_InnerClass_Static_Example {
     //Static InnerClass5 is not dependent on OOPS_9_InnerClass_Static_Example
@@ -17,3 +17,4 @@ public class OOPS_9_InnerClass_Static_Example {
     System.out.println(b.s);
     }
 }
+*/

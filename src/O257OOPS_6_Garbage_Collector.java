@@ -1,4 +1,4 @@
-class Bike{
+/*class Bike{
     int cost;
 
     Bike(int cost){
@@ -24,3 +24,4 @@ public class OOPS_6_Garbage_Collector {
         }
     }
 }
+*/

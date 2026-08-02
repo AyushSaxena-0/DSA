@@ -34,7 +34,7 @@
     }
 }
 
-public class OOPS_2_Class {
+/*public class OOPS_2_Class {
     //Class is a logical construct
     //Object is a physical reality
     //Like car is a logic
@@ -89,3 +89,4 @@ public class OOPS_2_Class {
         System.out.println(std6.rno+" "+std6.name+" "+std6.marks);
     }
 }
+*/
