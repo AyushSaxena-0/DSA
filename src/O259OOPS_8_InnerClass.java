@@ -1,4 +1,3 @@
-package OOPS_KK;
 class Test1{
     String a;
 

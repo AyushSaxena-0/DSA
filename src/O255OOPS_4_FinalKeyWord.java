@@ -1,5 +1,3 @@
-package OOPS_KK;
-
 public class OOPS_4_FinalKeyWord {
     static void swap(int a,int b){
         int temp=a;

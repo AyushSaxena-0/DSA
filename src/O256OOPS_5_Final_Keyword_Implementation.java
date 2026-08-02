@@ -1,5 +1,3 @@
-package OOPS_KK;
-
 class Car{
     String name;
     int cost;

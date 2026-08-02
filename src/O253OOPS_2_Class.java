@@ -1,4 +1,3 @@
-package OOPS_KK;
 //Class which is public is used to keep java file name
     class Student{
     int rno;

@@ -1,7 +1,4 @@
-package OOPS_KK;
-
-
-public class OOPS_7_Static_Variable {
+public class O258OOPS_7_Static_Variable {
     static int a=10;
     static int b;
 
@@ -14,17 +11,17 @@ public class OOPS_7_Static_Variable {
 
     public static void main(String[] args) {
         //So we do not need to create object
-        OOPS_7_Static_Variable obj=new OOPS_7_Static_Variable();
+        O258OOPS_7_Static_Variable obj=new O258OOPS_7_Static_Variable();
         //System.out.println(obj.a+obj.b);
         //Even though obj.a works but it is technically wrong
         //As static variable is for all members of class
         //So use below syntax
-        System.out.println(OOPS_7_Static_Variable.a+" "+OOPS_7_Static_Variable.b);
+        System.out.println(O258OOPS_7_Static_Variable.a+" "+ O258OOPS_7_Static_Variable.b);
         //The static block ran only once
         //Even if I create a new object it won't run
-        OOPS_7_Static_Variable obj2=new OOPS_7_Static_Variable();
-        System.out.println(OOPS_7_Static_Variable.a);
-        OOPS_7_Static_Variable.b+=100;
-        System.out.println(OOPS_7_Static_Variable.b);
+        O258OOPS_7_Static_Variable obj2=new O258OOPS_7_Static_Variable();
+        System.out.println(O258OOPS_7_Static_Variable.a);
+        O258OOPS_7_Static_Variable.b+=100;
+        System.out.println(O258OOPS_7_Static_Variable.b);
     }
 }

@@ -1,6 +1,4 @@
-package OOPS_KK;
-
-public class OOPS_1_Introduction {
+public class O252OOPS_1_Introduction {
     public static void main(String[] args) {
         //Store 5 roll numbers
         int[] numbers=new int[5];

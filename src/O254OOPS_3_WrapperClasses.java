@@ -1,4 +1,3 @@
-package OOPS_KK;
 class Students {
     int rno;
     String name;
