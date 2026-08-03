@@ -9,7 +9,7 @@ public class O104String_Operators {
         System.out.println("a"+1);//String is concatenated to give a1
         //"a"+1 becomes "a"+"1"
         //As "a"+1 calls integer would be converted to Integer(wrapper class)
-        // which makes it toString
+        //which makes it toString
         System.out.println("Kunal"+new ArrayList<>());
         System.out.println("Kunal"+new Integer(56));
         //System.out.println(new ArrayList<>()+new Integer(56));
