@@ -1,4 +1,5 @@
 public class O109Patterns_Approach_to_solve_any_pattern_problem {
+
     //Run the for loop for the number of times equal to lines
     //For every row how many columns are there
     //Type of element each column has
