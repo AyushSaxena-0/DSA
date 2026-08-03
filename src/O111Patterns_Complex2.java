@@ -16,9 +16,10 @@ public class O111Patterns_Complex2 {
             for(int col=1;col<=rows-row+1;col++){
                 System.out.print("*");
             }
-            for(int col=1;col<=row;col++){
-                System.out.print(" ");
-            }
+              //This is not necessary
+//            for(int col=1;col<=row;col++){
+//                System.out.print(" ");
+//            }
             System.out.println();
         }
 
