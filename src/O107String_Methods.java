@@ -12,5 +12,6 @@ public class O107String_Methods {
         System.out.println(a.strip());//White spaces are removed from both sides
         String[]arr=a.strip().split(",");
         System.out.println(Arrays.toString(arr));
+
     }
 }
