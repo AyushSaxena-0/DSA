@@ -14,11 +14,11 @@ public class O103String_PrettyPrinting {
 // Basic Format Specifiers
 //Specifier	Data Type	Description	Example
 //%d	int, byte, short, long	Integer (decimal)	10
-//        %f	float, double	Floating-point number	10.25
-//        %s	String	String	"Ayush"
-//        %c	char	Character	'A'
-//        %b	boolean	Boolean	true
-//        %e	float, double	Scientific notation	1.05e+03
-//        %x	int	Hexadecimal	a
-//        %o	int	Octal	12
-//        %n	—	New line (platform independent)	line break
+//%f	float, double	Floating-point number	10.25
+//%s	String	String	"Ayush"
+//%c	char	Character	'A'
+//%b	boolean	Boolean	true
+//%e	float, double	Scientific notation	1.05e+03
+//%x	int	Hexadecimal	a
+//%o	int	Octal	12
+//%n	—	New line (platform independent)	line break
