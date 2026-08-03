@@ -8,8 +8,6 @@ public class O106String_Builder {
         builder.deleteCharAt(0);
         builder.reverse();
         builder.insert(1,"Java");
-
-
         System.out.println(builder);
     }
 }
