@@ -15,4 +15,8 @@ public class O269Leetcode_3345_Smallest_Divisible_Digit_Product_I {
         }
         return 0;
     }
+
+    static void main() {
+        System.out.println(smallestNumber(10, 2)); // Output: 12
+    }
 }
