@@ -30,4 +30,36 @@ public class O116Patterns_HOTS2 {
             printPattern(4);
         }
     }
+    /*
+    //This is my method i did in array and printed the array
+        public static int[][] tri(int n,int[][] nums,int row,int col){
+        int x=nums.length-1;
+        if(n==1){
+            nums[row][col]=1;
+            return nums;
+        }
+        else{
+            for(int i=row;i<=x-row;i++){
+                nums[i][col]=n;
+                nums[i][x-col]=n;
+            }
+            for(int i=col;i<=x-col;i++){
+                nums[row][i]=n;
+                nums[x-row][i]=n;
+            }
+            return tri(n-1,nums,row+1,col+1);
+        }
+    }
+    public static void main(String[] args) {
+        int n=4;
+        int row=0;
+        int col=0;
+        int[][]nums=new int[2*n-1][2*n-1];
+        int[][]ans=tri(n,nums,row,col);
+        for(int[] a:ans){
+            System.out.println(Arrays.toString(a));
+        }
+    }
+
+     */
 
