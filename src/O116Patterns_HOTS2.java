@@ -59,7 +59,7 @@ public class O116Patterns_HOTS2 {
         for(int[] a:ans){
             System.out.println(Arrays.toString(a));
         }
-        //You can also print the array
+        //You can also print the array elements and spaces for the exact pattern you want
     }
 
      */
