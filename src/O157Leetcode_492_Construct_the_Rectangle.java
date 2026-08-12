@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class O157Construct_the_Rectangle {
+public class O157Leetcode_492_Construct_the_Rectangle {
     public static int[] constructRectangle(int area) {
         for (int l = (int)Math.sqrt(area); l > 0; l--) {
             //I really could not think of this easy logic
