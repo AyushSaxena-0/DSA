@@ -26,7 +26,15 @@ public class O158Leetcode_13_Roman_To_Integer {
 
             return value;
         }
-
+        /*
+        Alter
+        if(i<s.length()-1&&map.get(s.charAt(i))<map.get(s.charAt(i+1))){
+                ans=ans+map.get(s.charAt(i+1))-map.get(s.charAt(i));
+                //As otherwise a.charAt(i+1) would have been counted twice
+                //Issue by skipping next iteration
+                i++;
+            }
+         */
     public static void main(String[] args) {
         System.out.println(romanToInt("IX"));
     }
