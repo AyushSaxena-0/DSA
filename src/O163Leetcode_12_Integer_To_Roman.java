@@ -61,7 +61,73 @@ public class O163Leetcode_12_Integer_To_Roman {
         }
         return ans.toString();
     }
-
+/*
+   ------ ALTER -------------
+public String intToRoman(int num) {
+        StringBuilder s=new StringBuilder();
+        if(num/1000>=1){
+            for(int i=0;i<num/1000;i++){
+                s.append("M");
+            }
+            num=num%1000;
+        }
+        if(num/900>0){
+            s.append("CM");
+            num=num%900;
+        }
+        if(num/500>0){
+            s.append("D");
+            num=num%500;
+        }
+        if(num/400>0){
+            s.append("CD");
+            num=num%400;
+        }
+        if(num/100>0){
+            for(int i=0;i<num/100;i++){
+                s.append("C");
+            }
+            num=num%100;
+        }
+        if(num/90>0){
+            s.append("XC");
+            num=num%90;
+        }
+        if(num/50>0){
+            s.append("L");
+            num=num%50;
+        }
+        if(num/40>0){
+            s.append("XL");
+            num=num%40;
+        }
+        if(num/10>0){
+            for(int i=0;i<num/10;i++){
+                s.append("X");
+            }
+            num=num%10;
+        }
+        if(num/9>0){
+            s.append("IX");
+            num=num%9;
+        }
+        if(num/5>0){
+            s.append("V");
+            num=num%5;
+        }
+        if(num/4>0){
+            s.append("IV");
+            num=num%4;
+        }
+        if(num/1>0){
+            for(int i=0;i<num/1;i++){
+                s.append("I");
+            }
+            num=num%1;
+        }
+        return s.toString();
+    }
+ */
     public static void main(String[] args) {
         System.out.println(intToRoman(3999));
     }
