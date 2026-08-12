@@ -8,6 +8,12 @@ public class O157Construct_the_Rectangle {
             if (area % l == 0) {
                 return new int[]{area / l, l};
             }
+            /*
+            Alter
+             for(int length=(int)Math.sqrt(area);length>0;length++){
+            if(area%length==0)return new int[]{Math.max(length,area/length),Math.min(length,area/length)};
+        }
+             */
         }
         return new int[]{area, 1};
     }
