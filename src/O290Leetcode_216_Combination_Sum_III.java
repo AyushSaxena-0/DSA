@@ -8,7 +8,7 @@ public class O290Leetcode_216_Combination_Sum_III {
             }
             return;
         }//Stopping
-        if(currentnum<1||currentnum>9||currentnum>n)return;
+        if(currentnum<1||currentnum>9||currentnum>n||n>0&&k==0)return;
         //Pick
         current.add(currentnum);
         helper(list,current,k,n-currentnum,currentnum+1);
