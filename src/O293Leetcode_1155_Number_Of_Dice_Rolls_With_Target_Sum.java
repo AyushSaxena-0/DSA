@@ -23,8 +23,20 @@ public class O293Leetcode_1155_Number_Of_Dice_Rolls_With_Target_Sum {
         }
         return helper(n,k,target,dp);
     }
+    static void diceRoll(String p,int target){
+        //This is made for dice faces 1 to 6
+        //You can generalize it later
+        if(target==0){
+            System.out.println(p);
+            return;
+        }
+        for(int i=1;i<=6&&i<=target;i++){
+            diceRoll(p+i,target-i);
+        }
+    }
 
     public static void main(String[] args) {
         System.out.println(numRollsToTarget(2, 6, 3));
+        diceRoll("",4);
     }
 }
