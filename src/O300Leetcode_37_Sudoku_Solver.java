@@ -12,7 +12,8 @@ public class O300Leetcode_37_Sudoku_Solver {
                 if(board[i][j]=='.')return new int[]{i,j};
             }
         }
-        //No blank cell found in this row
+        //No blank cell found in entire board
+        //That means the problem is solved
         return new int[]{-1,-1};
     }
     public static boolean isSafe(char[][]board,int row,int col,char n){
