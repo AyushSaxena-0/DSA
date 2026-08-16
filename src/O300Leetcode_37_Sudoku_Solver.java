@@ -1,6 +1,10 @@
 import java.util.Arrays;
 
 public class O300Leetcode_37_Sudoku_Solver {
+    //This question looks hard but trust me it is easy bro
+    //Just understand the isSafe() function conditions and then put digits from 1 to 9 at every next blank space
+    //If no blank space return true and is solved
+    //Otherwise backtrack
     //This function is used to find the blank cell in each row
     public static int[] blankCoordinates(char[][]board){
         for(int i=0;i<board.length;i++){
