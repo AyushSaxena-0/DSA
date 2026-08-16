@@ -5,7 +5,7 @@ public class O300Leetcode_37_Sudoku_Solver {
     //Just understand the isSafe() function conditions and then put digits from 1 to 9 at every next blank space
     //If no blank space return true and is solved
     //Otherwise backtrack
-    //This function is used to find the blank cell in each row
+    //This function is used to find the blank cell coordinate
     public static int[] blankCoordinates(char[][]board){
         for(int i=0;i<board.length;i++){
             for(int j=0;j<board[0].length;j++){
