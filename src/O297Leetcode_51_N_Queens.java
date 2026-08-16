@@ -7,6 +7,8 @@ public class O297Leetcode_51_N_Queens {
         //we only need to check upper left,right diagnol and column above
 
         //Checking same column
+        //Kunal complicated these conditions of isSafe() function
+        //Try this way,Its easier
         for(int i=0;i<row;i++){
             if(board[i][col])return false;
         }

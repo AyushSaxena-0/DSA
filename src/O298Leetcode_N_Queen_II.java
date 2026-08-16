@@ -4,6 +4,8 @@ import java.util.List;
 public class O298Leetcode_N_Queen_II {
     public static boolean isSafe(boolean[][]board,int row,int col){
         //Checking the column above
+        //Kunal complicated these conditions of isSafe() function
+        //Try this way,Its easier
         for(int i=0;i<row;i++){
             if(board[i][col])return false;
         }
