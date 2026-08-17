@@ -25,7 +25,16 @@ public class Main {
         //Default constructor is used
         Student ram=new Student();
         ram.studentInfo();
-
+        //Now i want you to observe something
+        Student s1=new Student(1,"s1",100);
+        Student s2=s1;
+        //This gives output name s1 as they point to same object in heap memory
+        s2.studentInfo();
+        //Now lets change s2
+        s2.changeName("Changed Name by S2");
+        //Observe change in s2 made change in s1 also because they point to same object in heap memory
+        s1.studentInfo();
+        //Hence create a copy constructor always to create a copy of objects
     }
 }
     class Student{
@@ -41,18 +50,23 @@ public class Main {
         name=s.name;
         marks=s.marks;
     }
-    Student(){
-            //This is constructor overloading
-            //By default when no parameter is passed then this runs on object creation
-            roll=0;
-            name="Default";
-            marks=0;
+//    Student(){
+//            //This is constructor overloading
+//            //By default when no parameter is passed then this runs on object creation
+//            roll=0;
+//            name="Default";
+//            marks=0;
+//        }
+        Student(){
+        //One constructor calling another constructor
+            this(0,"Default",0);
         }
     Student(int roll,String name,float marks){
         this.roll=roll;
         this.name=name;
         this.marks=marks;
     }
+
     void greeting(){
         System.out.println("Hello!,My name is "+this.name);
     }
