@@ -27,8 +27,15 @@ public class WrapperClasses {
         //Thus it cannot be modified
         //Convention is writing final variable with all capital letters
         final int BONUS=1000;
-        //Won't work as final is used
+        //Won't work as final is used and int is primitive
+        //But using final variable on object doesn't guarantee it won't change
+        final Student obj1=new Student();
+        obj1.changeName("Ankit"); //would change the name
+        System.out.println(obj1.name);//Look output is Ankit
         //BONUS=300;
         //Final variables have to be initialized as they cannot be modified later
+        //But you cannot reassign
+        //Like you cannot do something like
+        //obj1=new Student(1,"Ayush,6);
     }
 }
