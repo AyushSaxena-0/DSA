@@ -1,4 +1,4 @@
-package OOPS.com.Ayush.introduction;
+package OOPS.Lecture_1;
 
 public class WrapperClasses {
     static void swap(int a, int b){

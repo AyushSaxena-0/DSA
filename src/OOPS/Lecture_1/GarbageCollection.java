@@ -1,4 +1,4 @@
-package OOPS.com.Ayush.introduction;
+package OOPS.Lecture_1;
 
     class A {
     String name;
