@@ -19,16 +19,49 @@ public class Main {
         //             new int new Student() allots memory dynamically during the run time
         ayush=new Student(1,"Ayush", 96.6F);
         System.out.println(ayush.roll+" "+ayush.name+ " "+ayush.marks);
+        ayush.greeting();
+        ayush.changeName("TechLover");
+        ayush.greeting();
+        //Default constructor is used
+        Student ram=new Student();
+        ram.studentInfo();
+
     }
 }
     class Student{
-    int roll;
-    String name;
-    float marks;
 
+        int roll;
+        String name;
+        float marks;
+        //Constructors do not have a return type
+    Student(Student s){
+        //This is used for copying one object and creating new object
+        //This also known as copy constructor
+        roll=s.roll;
+        name=s.name;
+        marks=s.marks;
+    }
+    Student(){
+            //This is constructor overloading
+            //By default when no parameter is passed then this runs on object creation
+            roll=0;
+            name="Default";
+            marks=0;
+        }
     Student(int roll,String name,float marks){
         this.roll=roll;
         this.name=name;
         this.marks=marks;
+    }
+    void greeting(){
+        System.out.println("Hello!,My name is "+this.name);
+    }
+    void changeName(String newName){
+        this.name=newName;//You can also use name here
+    }
+    void studentInfo(){
+        System.out.println("Name: "+this.name);
+        System.out.println("Marks: "+this.marks);
+        System.out.println("Roll: "+this.roll);
     }
 }
