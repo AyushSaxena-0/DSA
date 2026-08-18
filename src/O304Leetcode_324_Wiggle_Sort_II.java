@@ -23,6 +23,7 @@ public class O304Leetcode_324_Wiggle_Sort_II {
             }
         }
         //Note this copying methord
+        //You can also use int[]copy =Arrays.copyOf(arr,arr.length)
         System.arraycopy(ans,0,nums,0,n);
     }
 
