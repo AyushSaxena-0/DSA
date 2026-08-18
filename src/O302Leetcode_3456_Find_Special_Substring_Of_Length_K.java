@@ -1,4 +1,4 @@
-public class O302Leetcode_3456_Find_Special_Ssubstring_Of_Length_K {
+public class O302Leetcode_3456_Find_Special_Substring_Of_Length_K {
     public static boolean hasSpecialSubstring(String s, int k) {
         //Always remember s.substring(i,j) would have elements form i to j-1
         for(int i=0;i<s.length();i++){
