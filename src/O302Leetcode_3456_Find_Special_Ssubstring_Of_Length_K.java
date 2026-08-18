@@ -25,10 +25,27 @@ public class O302Leetcode_3456_Find_Special_Ssubstring_Of_Length_K {
         }
         return false;
     }
+    public static boolean twoPointers(String s,int k){
+        int i=0;
+        int n=s.length();
+
+        while(i<n){
+            int j=i;
+            while(j<n&&s.charAt(j)==s.charAt(i)){
+                j++;
+            }
+            if(j-i==k){
+                return true;
+            }
+            i=j;
+        }
+        return false;
+    }
 
     public static void main(String[] args) {
         String s="aaaaac";
         int k=5;
         System.out.println(hasSpecialSubstring(s,k));
+        System.out.println(twoPointers(s,k));
     }
 }
