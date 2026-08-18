@@ -34,6 +34,7 @@ public class O302Leetcode_3456_Find_Special_Ssubstring_Of_Length_K {
             while(j<n&&s.charAt(j)==s.charAt(i)){
                 j++;
             }
+            //Other two conditions are already taken care of by while loop conditions
             if(j-i==k){
                 return true;
             }
