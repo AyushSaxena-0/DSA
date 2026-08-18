@@ -28,7 +28,7 @@ public class O302Leetcode_3456_Find_Special_Ssubstring_Of_Length_K {
     public static boolean twoPointers(String s,int k){
         int i=0;
         int n=s.length();
-
+    //Optimised approach
         while(i<n){
             int j=i;
             while(j<n&&s.charAt(j)==s.charAt(i)){
