@@ -9,7 +9,5 @@ public class O2Primitives {
         boolean check =false;
         int a=2_00_000;// _ would be ignored
         System.out.println(a);
-
-
     }
 }
