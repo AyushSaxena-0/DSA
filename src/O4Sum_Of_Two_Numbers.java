@@ -5,6 +5,6 @@ public class O4Sum_Of_Two_Numbers {
         System.out.println("Enter the two numbers");
         int a=sc.nextInt();
         int b=sc.nextInt();
-        System.out.println("Sum= "+(a+b));
+        System.out.println("Sum = "+(a+b));
     }
 }
