@@ -9,6 +9,10 @@ public class InnerClasses {
         public Test(String name) {
             this.name = name;
         }
+        @Override
+        public String toString(){
+            return name;
+        }
     }
     class A{
         //Non static inner class
@@ -26,8 +30,8 @@ public class InnerClasses {
         Test obj1=new Test("Ayush");
         Test obj2=new Test("Bob");
         //What would be the output?As both of them are static !
-        System.out.println(obj1.name);
-        System.out.println(obj2.name);
+//        System.out.println(obj1.name);
+//        System.out.println(obj2.name);
         //But static means that not dependent on object they why diffrent name is printed per object?
         //Static means that static class Test is not dependent on objects of outer class (named as "InnerClass" here)
         //Static class doesn't mean that it won't have its own object
@@ -36,5 +40,6 @@ public class InnerClasses {
         //A obj=new A("Ram");
         //So you cannot use non-static function inside a static method
         //Static methods compiled during runtime
+        System.out.println(obj1.toString());
     }
 }
