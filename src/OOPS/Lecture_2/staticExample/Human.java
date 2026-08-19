@@ -7,6 +7,16 @@ public class Human {
     static int legs=2;
     //Static variables are common to all object of its class
     static int population;
+
+   static void message(){
+       System.out.println("Hello World");
+       //You cannot use this.height variable inside it as it is a static method
+       //Independent of object
+       //So object dependent variable cannot be used here
+       //You can use static variables Human.population
+       System.out.println("The population of Humans is "+Human.population);
+   }
+
     //Press Alt+Insert to create and select all by clicking Ctrl+A to automatically create constructor
     public Human(int age, int height) {
         this.age = age;

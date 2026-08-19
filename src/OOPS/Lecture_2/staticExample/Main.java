@@ -21,6 +21,7 @@ public class Main {
         System.out.println(A.population);
         //This is recommended ClassName.StaticVariableName
         System.out.println(Human.population);
+        Human.message();
     }
     // Very Very Important question
     //Why is main function static?
