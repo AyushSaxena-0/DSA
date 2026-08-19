@@ -28,6 +28,8 @@ public class InnerClasses {
         //What would be the output?As both of them are static !
         System.out.println(obj1.name);
         System.out.println(obj2.name);
+        //But static means that not dependent on object they why diffrent name is printed per object?
+
         //You cannot do this
         //As this class is dependent on parent class Test
         //A obj=new A("Ram");
