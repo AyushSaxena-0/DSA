@@ -4,9 +4,28 @@ public class InnerClasses {
     //Only inner classes can be static
     static class Test{
     //Static inner class
-        //As Non-static inner classes are dependent on outclass object
+        String name;
+
+        public Test(String name) {
+            this.name = name;
+        }
     }
     class A{
         //Non static inner class
+        //As Non-static inner classes are dependent on outclass object
+        //So they are dependent
+        String name;
+
+        public A(String name) {
+            this.name = name;
+        }
+    }
+
+    public static void main(String[] args) {
+        //You cannot do something like
+        Test obj1=new Test("Ayush");
+        //You cannot do this
+        //As this class is dependent on parent class Test
+        //A obj=new A("Ram");
     }
 }
