@@ -22,6 +22,7 @@ public class MoreStaticConcepts {
     static void fun3(){
         //If i want to use a non static method inside a static method
         //Then i need to create object of it
+        //Since fun3() is static and fun2() is non static so create object of this class
         MoreStaticConcepts obj1=new MoreStaticConcepts();
         obj1.fun2();
     }
