@@ -29,7 +29,8 @@ public class InnerClasses {
         System.out.println(obj1.name);
         System.out.println(obj2.name);
         //But static means that not dependent on object they why diffrent name is printed per object?
-
+        //Static means that static class Test is not dependent on objects of outer class (named as "InnerClass" here)
+        //Static class doesn't mean that it won't have its own object
         //You cannot do this
         //As this class is dependent on parent class Test
         //A obj=new A("Ram");
