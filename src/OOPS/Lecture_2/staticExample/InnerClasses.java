@@ -27,5 +27,6 @@ public class InnerClasses {
         //You cannot do this
         //As this class is dependent on parent class Test
         //A obj=new A("Ram");
+        //So you cannot use non static function inside a static method
     }
 }
