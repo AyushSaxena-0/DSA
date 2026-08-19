@@ -24,6 +24,10 @@ public class InnerClasses {
     public static void main(String[] args) {
         //You cannot do something like
         Test obj1=new Test("Ayush");
+        Test obj2=new Test("Bob");
+        //What would be the output?As both of them are static !
+        System.out.println(obj1.name);
+        System.out.println(obj2.name);
         //You cannot do this
         //As this class is dependent on parent class Test
         //A obj=new A("Ram");
