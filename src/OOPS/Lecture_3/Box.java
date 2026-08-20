@@ -10,6 +10,7 @@ public class Box {
 
     //For Empty
     public Box() {
+        //super(); Object class
         this.length=-1;
         this.width=-1;
         this.height=-1;
