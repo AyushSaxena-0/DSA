@@ -19,6 +19,7 @@ public class BoxWeight extends Box{
         //Super is parent class constructor
         //Super also stands for superclass constructor
         super(length,width,height);//Calling the parent class constructor
+        System.out.println("Child Class Constructor");
         this.weight=weight;
     }
     public void sample(){

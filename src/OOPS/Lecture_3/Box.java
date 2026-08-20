@@ -24,6 +24,7 @@ public class Box {
 
     //Cuboid
     public Box(int length,int width,int height){
+        System.out.println("Parent class Constructor");
         this.length=length;
         this.width=width;
         this.height=height;

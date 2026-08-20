@@ -25,6 +25,9 @@ public class Inheritance {
         //So this won't work and give error
         //Referance variable is in stack and object is in heap memory
         //Box pointing to BoxWeight in heap memory would work as all the variables of Box are available in BoxWeight
+        //Observe that parent class constructor is called first as child is dependent on parent class
+        //So parent class constructor is called first
+        //Then child class constructor is called
     }
 
 }
