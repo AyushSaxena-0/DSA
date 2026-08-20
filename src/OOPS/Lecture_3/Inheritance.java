@@ -18,6 +18,13 @@ public class Inheritance {
         //The below line won't work as parent cannot use child variables
         //System.out.println(box5.weight);
         //You can only use variables and methods like box5.length,box5.width,box5.height
+        //Also you cannot do like below
+        //BoxWeight box2=new Box(length,breadth,height);
+        //This is because you would then try to access weight but that is not possible
+        //The object that you are referencing to in the heap memory does not contain weight in it
+        //So this won't work and give error
+        //Referance variable is in stack and object is in heap memory
+        //Box pointing to BoxWeight in heap memory would work as all the variables of Box are available in BoxWeight
     }
 
 }
