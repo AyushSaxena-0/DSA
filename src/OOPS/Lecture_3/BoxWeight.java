@@ -26,5 +26,8 @@ public class BoxWeight extends Box{
         System.out.println(this.height);
         System.out.println(super.height);
         //Both this.height and super.height are valid
+        //Also if you have height variable in both the parent and child class then you can
+        //use super.height to call the value of height variable in parent class variable value
+        //use this.height to call the value of height variable in child class
     }
 }
