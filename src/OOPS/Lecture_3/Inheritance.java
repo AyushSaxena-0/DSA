@@ -13,6 +13,11 @@ public class Inheritance {
         bw.information();
         //nonAccessable variable cannot be accessed here outside its own class
         //So "System.out.println(bw.nonAccessable);" this would give error
+        //Also observe that Box5 is of type Box and not BoxWeight() even though it looks like that
+        Box box5=new BoxWeight(1,2,3,5);
+        //The below line won't work as parent cannot use child variables
+        //System.out.println(box5.weight);
+        //You can only use variables and methods like box5.length,box5.width,box5.height
     }
 
 }
