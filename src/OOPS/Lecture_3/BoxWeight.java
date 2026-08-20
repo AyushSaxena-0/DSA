@@ -13,6 +13,7 @@ public class BoxWeight extends Box{
         //As the parent class do not require the variable of child class thus a child class constructor could be used
         //But a parent class constructor cannot be used for calling a child class as child class is dependent on additional variables not available in parent class
         //Check the class named Inheritance in package OOPS.Lecture_3 for more detailed description and logic
+        //Because variable of reference variable should all be present in the object pointed to in heap memory
         this.weight=bw.weight;
     }
     public BoxWeight(int length,int width,int height,int weight){
