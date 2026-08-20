@@ -12,6 +12,7 @@ public class BoxWeight extends Box{
         super(bw);  //Note child class can be used as a type for parent class
         //As the parent class do not require the variable of child class thus a child class constructor could be used
         //But a parent class constructor cannot be used for calling a child class as child class is dependent on additional variables not available in parent class
+        //Check the class named Inheritance in package OOPS.Lecture_3 for more detailed description and logic
         this.weight=bw.weight;
     }
     public BoxWeight(int length,int width,int height,int weight){
