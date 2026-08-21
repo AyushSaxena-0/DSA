@@ -1,4 +1,4 @@
-package OOPS.Lecture_3;
+package OOPS.Lecture_3_Part_1;
 //This is example of Multi Level Inheritance
 
 //          Box

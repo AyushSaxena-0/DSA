@@ -1,4 +1,4 @@
-package OOPS.Lecture_3;
+package OOPS.Lecture_3_Part_1;
 
 public class Box {
     //Private members of parent class cannot be inherited by child class

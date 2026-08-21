@@ -1,4 +1,4 @@
-package OOPS.Lecture_3;
+package OOPS.Lecture_3_Part_1;
 
 public class Inheritance {
     //Inheritance is child class using properties of base class

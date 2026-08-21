@@ -1,4 +1,4 @@
-package OOPS.Lecture_3;
+package OOPS.Lecture_3_Part_1;
 
 public class BoxWeight extends Box{
     int weight;
