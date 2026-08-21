@@ -4,6 +4,13 @@ public class Inheritance {
     //Inheritance is child class using properties of base class
     //Private members of the parent class are not accessed by the child class
     //Multi level inheritance is when parent of child class is itself child of another class
+    //Multiple Inheritance one class is child to more than one parent class
+    //Multiple Inheritance is not supported in Java
+    //If one variable is in both the parent class then if object of child calls that variable then what would be the output ?This is the reason why java does not support multiple inheritance
+    //We would deal with this in Interfaces
+    //Hierarchical Interface One parent can have multiple parents like in a hierarchical tree of family
+
+
     public static void main(String[] args) {
         //Box box1 =new Box(10,10,10);
         //Box box2=new Box(box1);
@@ -30,6 +37,11 @@ public class Inheritance {
         //So parent class constructor is called first
         //Then child class constructor is called
         BoxPrice box=new BoxPrice(5,8,200);
+        B obj1=new B();
+        A obj2=new A();
+        //Look both of these posseses int a variable of parent class A
+        System.out.println(obj1.a);
+        System.out.println(obj2.a);
     }
 
 }
