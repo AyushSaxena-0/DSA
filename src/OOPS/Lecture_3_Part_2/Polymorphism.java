@@ -36,6 +36,13 @@ public class Polymorphism {
         Shapes shape1 = new Triangle();
         shape1.area();//It would print triangle area note this
         //Reference variable points to object of Triangle class
+        //Parent obj=new Child();
+        //Here which method to call depends on new Child();
+        //This is known as Upcasting
+        //Left side tells which methods and variable it can access and right side tell which version of that method it would call
+        //This is very important to understand
+        //Java determined it by Dynamic Method Dispatch
+        //It is also the reason why it is called Dynamic Polymorphism
 
         shape.area();
         circle.area();
