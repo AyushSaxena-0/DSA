@@ -9,6 +9,7 @@ public class Polymorphism {
     //Also observe we made different constructors with same name and different parameters
     //This is known as method overloading
     //Two types of polymorphism
+
     //1)Runtime Polymorphism (Method Overriding)
     //2)Compile Time Polymorphism (Method OverLoading) (also known as static polymorphism)
 
