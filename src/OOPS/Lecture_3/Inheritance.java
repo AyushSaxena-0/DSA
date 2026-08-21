@@ -9,8 +9,8 @@ public class Inheritance {
     //If one variable is in both the parent class then if object of child calls that variable then what would be the output ?This is the reason why java does not support multiple inheritance
     //We would deal with this in Interfaces
     //Hierarchical Interface One parent can have multiple parents like in a hierarchical tree of family
-
-
+    //Hybrid Inheritance Combination of single and multiple inheritance
+    //Not in java check Interfaces module/Lecture
     public static void main(String[] args) {
         //Box box1 =new Box(10,10,10);
         //Box box2=new Box(box1);
@@ -36,6 +36,7 @@ public class Inheritance {
         //Observe that parent class constructor is called first as child is dependent on parent class
         //So parent class constructor is called first
         //Then child class constructor is called
+        //Also a class cannot inherit itself i.e. no cyclic inheritance
         BoxPrice box=new BoxPrice(5,8,200);
         B obj1=new B();
         A obj2=new A();
