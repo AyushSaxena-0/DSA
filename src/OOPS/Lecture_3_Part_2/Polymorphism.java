@@ -13,9 +13,9 @@ public class Polymorphism {
     //2)Compile Time Polymorphism (Method OverLoading) (also known as static polymorphism)
 
     //This is method overloading
-    //Same name but different parameters
+    //Same name but different parameters/Ordering of diffrent types of parameter/Aguments could be diffrent
 
-    static int sum(int a,int b){
+    static double sum(double a,int b){
         return a+b;
     }
     static int sum(int a ,int b,int c){
@@ -40,6 +40,10 @@ public class Polymorphism {
         circle.area();
         square.area();
         triangle.area();
-
+        //Look both functions are same named but have different parameters
+        //a calls double a as typecasting of integer argument is already done
+        //When appropriate parameter type in argument is not found
+        System.out.println(sum(1,2));
+        System.out.println(sum(1,2,3));
     }
 }
