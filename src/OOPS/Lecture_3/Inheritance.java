@@ -3,6 +3,7 @@ package OOPS.Lecture_3;
 public class Inheritance {
     //Inheritance is child class using properties of base class
     //Private members of the parent class are not accessed by the child class
+    //Multi level inheritance is when parent of child class is itself child of another class
     public static void main(String[] args) {
         //Box box1 =new Box(10,10,10);
         //Box box2=new Box(box1);
