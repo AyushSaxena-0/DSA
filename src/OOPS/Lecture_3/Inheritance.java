@@ -28,6 +28,7 @@ public class Inheritance {
         //Observe that parent class constructor is called first as child is dependent on parent class
         //So parent class constructor is called first
         //Then child class constructor is called
+        BoxPrice box=new BoxPrice(5,8,200);
     }
 
 }

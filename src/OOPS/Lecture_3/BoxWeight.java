@@ -16,6 +16,10 @@ public class BoxWeight extends Box{
         //Because variable of reference variable should all be present in the object pointed to in heap memory
         this.weight=bw.weight;
     }
+    public BoxWeight(int side,int weight){
+        super(side);
+        this.weight=weight;
+    }
     public BoxWeight(int length,int width,int height,int weight){
 //        this.length=length;
 //        this.width=width;

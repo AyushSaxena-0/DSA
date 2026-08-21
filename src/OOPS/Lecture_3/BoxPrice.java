@@ -25,4 +25,9 @@ public class BoxPrice extends BoxWeight {
         super(other);
         this.weight=other.weight;
     }
+
+    public BoxPrice(int side, int weight, int cost) {
+        super(side,weight);
+        this.cost=cost;
+    }
 }
