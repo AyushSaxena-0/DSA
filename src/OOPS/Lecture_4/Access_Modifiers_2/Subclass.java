@@ -15,7 +15,7 @@ public class Subclass extends A {
         //instanceof is used to check weather an object is instance of class
         System.out.println(obj instanceof A);//true
         System.out.println(obj instanceof Subclass);//true
-
+        //.getClass() tells us the information about class
         System.out.println(obj.getClass().getName());//.getClass() is used to use many class method
     }
 }
