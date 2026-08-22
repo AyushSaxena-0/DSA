@@ -12,5 +12,8 @@ public class Subclass extends A {
         System.out.println(obj.pro);
         System.out.println(obj.pub);
         //System.out.println(obj.def);  Default access specifier won't work
+        //instanceof is used to check weather an object is instance of class
+        System.out.println(obj instanceof A);//true
+        System.out.println(obj instanceof Subclass);//true
     }
 }
