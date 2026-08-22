@@ -14,5 +14,6 @@ public class Encapsulation_Vs_Abstraction {
     //It focus on external working
 
     //Encapsulation → wrapping data + methods together inside a class.
-    //Data hiding → restricting direct access to that data.
+    //Encapsulation is subprocess of data hiding
+    //Data Hiding → restricting direct access to that data.
 }
