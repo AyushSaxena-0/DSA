@@ -1,4 +1,4 @@
-package OOPS.Lecture_4.Access_Modifiers;
+package OOPS.Lecture_4.Access_Modifiers_1;
 
 /* Access modifier table
 

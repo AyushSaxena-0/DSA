@@ -1,6 +1,6 @@
-package OOPS.Lecture_4.Packages;
+package OOPS.Lecture_4.Access_Modifiers_2;
 //This class is in different package as parent class so default constructor won't work
-import OOPS.Lecture_4.Access_Modifiers.A;
+import OOPS.Lecture_4.Access_Modifiers_1.A;
 
 public class Subclass extends A {
     public Subclass(int num, String name) {

@@ -1,6 +1,6 @@
-package OOPS.Lecture_4.Packages;
+package OOPS.Lecture_4.Access_Modifiers_2;
 
-import OOPS.Lecture_4.Access_Modifiers.A;
+import OOPS.Lecture_4.Access_Modifiers_1.A;
 
 public class Main {
     public static void main(String[] args) {

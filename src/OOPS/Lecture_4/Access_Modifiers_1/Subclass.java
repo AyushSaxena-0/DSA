@@ -1,4 +1,4 @@
-package OOPS.Lecture_4.Access_Modifiers;
+package OOPS.Lecture_4.Access_Modifiers_1;
 //This class is withing the same package as parent A class
 class Subclass extends A{
 
