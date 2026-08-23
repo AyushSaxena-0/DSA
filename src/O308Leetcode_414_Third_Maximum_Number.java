@@ -52,9 +52,47 @@ public class O308Leetcode_414_Third_Maximum_Number {
     return c == Long.MIN_VALUE ? (int)a :(int) c;
     }
      */
+    public static int thirdMax2(int[] nums) {
+        //Alter could be using three variables a,b,c and whenever you encounter
+        //nums[i]>a just do
+        //int temp=a;
+        //a=nums[i];
+        //c=b;
+        //b=temp;
+        //When iteration is over return c
 
+        long a = Long.MIN_VALUE;
+        long b = Long.MIN_VALUE;
+        long c = Long.MIN_VALUE;
+
+        for(int i=0;i<nums.length;i++){
+            //Note this methord
+            //If duplication is found dont put b or c as a because we need to find unique
+            if (nums[i] == a || nums[i] == b || nums[i] == c)
+                continue;
+            if(nums[i]>a){
+                //For finding the largest
+                long temp=a;
+                a=nums[i];
+                c=b;
+                b=temp;
+            }
+            else if (nums[i] > b) {
+                //Finding the second largest
+                c = b;
+                b = nums[i];
+            }
+            else if (nums[i] > c) {
+                //Finding the third largest
+                c = nums[i];
+            }
+        }
+        //As per the question if we do not found the third largest value then return the maximum number which is a
+        return c == Long.MIN_VALUE ? (int)a :(int) c;
+    }
     public static void main(String[] args) {
         int[]arr={3,2,1};
         System.out.println(thirdMax(arr));
+        System.out.println(thirdMax2(arr));
     }
 }
