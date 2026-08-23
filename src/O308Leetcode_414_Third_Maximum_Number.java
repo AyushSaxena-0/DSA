@@ -47,7 +47,8 @@ public class O308Leetcode_414_Third_Maximum_Number {
             c = nums[i];
         }
     }
-
+    //If third largest not found in array return the largest hence return a if c orignal value is same
+    //We use long because Integer.Max_Value is a valid test case
     return c == Long.MIN_VALUE ? (int)a :(int) c;
     }
      */
