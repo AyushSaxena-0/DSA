@@ -10,6 +10,7 @@ public class O30Variable_Argumens {
     static void multiple(int a,int b,String ...v){
         //Also note that variable argument variable should come at the end, otherwise there would be confusion to determine which id last variable
         // multiple(int a, String...v,int b) would not work as there would be no end to variable arguments
+        //multiple(String ....s,int ...a) also won't work as computer wont know when to stop taking one parameter and start taking another
         System.out.println(a);
         System.out.println(b);
         System.out.println(Arrays.toString(v));
