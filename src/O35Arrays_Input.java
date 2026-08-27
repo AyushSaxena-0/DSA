@@ -16,10 +16,11 @@ public class O35Arrays_Input {
         String[] xyz=new String[4];
         for (int i=0;i<xyz.length;i++){//Note here you can't use enhanced for loop as there iss no element in the array by default
             //So we are using normal for loop
+            System.out.println("Enter element");
             xyz[i]=sc.next();
         }
         //Arrays are mutable
-        xyz[0]="ALAH";
+        xyz[0]="ShivJi";
         System.out.println(Arrays.toString(xyz));
     }
 }
