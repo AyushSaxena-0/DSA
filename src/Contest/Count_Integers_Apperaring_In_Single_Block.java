@@ -7,7 +7,7 @@ public class Count_Integers_Apperaring_In_Single_Block {
     public static int countSpecialIntegers(int[] nums) {
         if(nums.length==1)return 1;
         //I think i need to use ArrayList indexOf() and lastIndexOf() method
-        //Also i need to usue two pointer method
+        //Also i need to use two pointer method
         List<Integer> list=new ArrayList<>();
         for(int i=0;i<nums.length;i++){
             list.add(nums[i]);
