@@ -73,4 +73,5 @@ public class CustomArrayList {
     }
     //Problem with custom arraylist which we made
     //It is only made to handle integer as it has integer arraylist
+    //But inBuilt arraylist can handle integer,float or even custom data types
 }
