@@ -27,6 +27,7 @@ public class Count_Integers_Apperaring_In_Single_Block {
             int last=list.lastIndexOf(nums[left]);
             //We did what question asked in every sequence checked left one
             if(first==left&&last==right-1)count++;
+            //Slide the window towards right
             left=right;
         }
         return count;
