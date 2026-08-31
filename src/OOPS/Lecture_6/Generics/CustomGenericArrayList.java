@@ -11,6 +11,8 @@ public class CustomGenericArrayList<T> {
     // Then all elements of previous arraylist gets copied in it this process is repeated till needed
     // Since the size doubles thus average time complexity comes out top be O(1)
     // We would do add, remove, size, get, get at index by our custom arraylist
+    //By using Wildcards you can restrict what kind of data types you can provide in generics
+    //Yous should read oracle documentation online for it
 
     private Object[] data;
     private int size;
