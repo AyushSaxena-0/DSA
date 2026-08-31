@@ -12,7 +12,8 @@ public class CustomGenericArrayList<T> {
     // Since the size doubles thus average time complexity comes out top be O(1)
     // We would do add, remove, size, get, get at index by our custom arraylist
     //By using Wildcards you can restrict what kind of data types you can provide in generics
-    //Yous should read oracle documentation online for it
+    //You should read oracle documentation online for it
+    //https://docs.oracle.com/javase/tutorial/java/generics/upperBounded.html?utm_source=chatgpt.com
 
     private Object[] data;
     private int size;
