@@ -75,4 +75,9 @@ public class CustomArrayList {
     //It is only made to handle integer as it has integer arraylist
     //But inBuilt arraylist can handle integer,float or even custom data types
     //So we use generics to solve this problem
+    //So check out generic folder
+    //Writing code for different arrays would make code lengthy and redundant
+    //So we need a template like <Integer> or <String> etc for type Safety
+    //<> cannot have <int> or primitives inside them
+    //Thus only classes are allowed <Class>
 }
