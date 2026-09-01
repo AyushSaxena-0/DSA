@@ -40,7 +40,8 @@ public class Main {
                 return (int)(o1.roll-o2.roll);
             }
         });
-        Arrays.sort(arr, (o1, o2) -> (int)(o1.roll-o2.roll));
+        //This can be replaced by lambda expressions like done below
+        //Arrays.sort(arr, (o1, o2) -> (int)(o1.roll-o2.roll));
         // We cannot use > or < directly to compare Student objects.
         // Therefore, Student implements Comparable<Student>.
         // compareTo() defines how two Student objects should be compared.
