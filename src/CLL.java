@@ -92,6 +92,17 @@ public class CLL {
         size--;
         return val;
     }
+    public int removeAtIndex(int index){
+        if(index<0||index>=size)return -1;
+        if(index==0)return removeFirst();
+        if(index==size-1)return removeLast();
+        //This is going to be the general case
+        Node prev=getBefore(index);
+        int val=prev.next.val;
+        prev.next=prev.next.next;//prev.next cannot be null as it is circular linked list
+        size--;
+        return val;
+    }
     private class Node{
         int val;
         Node next;

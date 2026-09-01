@@ -7,6 +7,7 @@ public class O322Circular_Linked_List {
         list.addFirst(2);
         list.addFirst(1);
         list.addLast(6);
+        list.removeLast();
         list.print();
     }
 }
