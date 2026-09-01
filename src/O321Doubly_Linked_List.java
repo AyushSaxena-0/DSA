@@ -13,5 +13,6 @@ public class O321Doubly_Linked_List {
         list.removeLast();
         list.print();
         list.printReverse();
+
     }
 }
