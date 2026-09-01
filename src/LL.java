@@ -123,7 +123,46 @@ public class LL {
         size--;
         return val;
     }
-
+    public Node get(int index){
+        //I am designing this to get the reference pointer to that node
+        Node temp=head;
+        for(int i=1;i<index;i++){
+            temp=temp.next;
+        }
+        return temp;
+    }
+    public int deleteLast(){
+        //This is alter to remove last I made by Kunal
+        if(size<=1)return removeFirst();
+        Node secondLast=get(size-2);
+        int val=secondLast.next.val;
+        secondLast.next=null;
+        size--;
+        return val;
+    }
+    public Node find(int value){
+        //I am designing this to get the reference pointer to that node
+        Node temp=head;
+        while(temp!=null){
+            if(temp.val==value) {
+                return temp;
+            }
+            temp=temp.next;
+        }//Not found
+        return null;
+    }
+    public int deleteAtIndex(int index){
+        //This is again alter to removeAtIndex()
+        if(index<0||index>=size)return -1;
+        else if(index==0)return removeFirst();
+        else if(index==size-1)return removeLast();
+        //Now for general case get node previous to node which is to be deleted
+        Node prev=get(index-1);
+        int val=prev.next.val;
+        prev.next=prev.next.next;
+        size--;
+        return val;
+    }
     private class Node{
 
         private int val;
