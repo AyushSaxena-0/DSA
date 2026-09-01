@@ -96,7 +96,7 @@ public class DLL {
             System.out.print(temp.val+"->");
             temp=temp.next;
         }
-        System.out.print("End");
+        System.out.println("End");
     }
 
     private class Node{

@@ -9,9 +9,7 @@ public class O321Doubly_Linked_List {
         list.addAtIndex(3,100);
         list.print();
         list.removeFirst();
-        System.out.println();
         list.print();
-        System.out.println();
         list.removeLast();
         list.print();
     }
