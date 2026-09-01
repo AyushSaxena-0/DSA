@@ -8,6 +8,7 @@ public class O310Linked_List {
         list.addFirst(0);
         list.addLast(6);
         list.insertAtIndex(5,5);
+        list.removeAtIndex(3);
         list.print();
     }
 }
