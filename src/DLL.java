@@ -101,7 +101,8 @@ public class DLL {
     public void printReverse(){
         if(tail==null)return;
         Node temp=tail;
-        //Another way would be travel towards temp.next while maintaining a pointer curr=temp
+        //Another way would be travel towards temp.next while maintaining a pointer last=temp
+        //Create a new Node last
         //At the end you would have the tail pointer if the tail pointer is not given by the question
         while(temp!=null){
             System.out.print(temp.val+"->");
