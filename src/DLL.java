@@ -98,7 +98,15 @@ public class DLL {
         }
         System.out.println("End");
     }
-
+    public void printReverse(){
+        if(tail==null)return;
+        Node temp=tail;
+        while(temp!=null){
+            System.out.print(temp.val+"->");
+            temp=temp.prev;
+        }
+        System.out.println("Start");
+    }
     private class Node{
         int val;
         Node next;
