@@ -106,7 +106,7 @@ public class LL {
         return val;
     }
     public int removeAtIndex(int index){
-        if(index<0||index>size)return -1;
+        if(index<0||index>=size)return -1;
         if(index==0){
             return removeFirst();
         }
