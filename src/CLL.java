@@ -46,7 +46,6 @@ public class CLL {
         if(head==null||index>=size||index<=0)return null;
         for(int i=1;i<index;i++){
             temp=temp.next;
-            if(temp==head)return null;
         }
         return temp;
     }
@@ -67,7 +66,32 @@ public class CLL {
         before.next=node;
         size++;
     }
-
+    public int removeFirst(){
+        if(head==null)return -1;
+        int val=head.val;
+        if(head==tail){
+            head=null;
+            tail=null;
+        }
+        else{
+            head=head.next;
+            //Circular Linked List
+            tail.next=head;
+        }
+        size--;
+        return val;
+    }
+    public int removeLast(){
+        if(tail==null)return -1;
+        if(tail==head)return removeFirst();
+        //Now I need to reach index before tail
+        Node prev=getBefore(size-1);
+        int val=tail.val;
+        prev.next=head;
+        tail=prev;
+        size--;
+        return val;
+    }
     private class Node{
         int val;
         Node next;
