@@ -24,6 +24,7 @@ public class CLL {
     public void print(){
         if(head==null)return;
         Node temp=head;
+        //Or you can use a Do-While loop
         while(temp.next!=head){
             System.out.print(temp.val+"->");
             temp=temp.next;
@@ -93,6 +94,9 @@ public class CLL {
         return val;
     }
     public int removeAtIndex(int index){
+        //You can also solve this problem by taking a node n=node.next and if n.val==target then node=n.next and break the do while loop
+        //Keep running do while loop till node!=head;
+        //Above-mentioned way was of Kunal,I Implemented it by my way
         if(index<0||index>=size)return -1;
         if(index==0)return removeFirst();
         if(index==size-1)return removeLast();
