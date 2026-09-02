@@ -15,7 +15,7 @@ public class O38Dynamic_Arrays_ArrayLists {
             list.add(sc.nextInt());
         }
        //System.out.println(list);//prints entire list
-        list.add(0,99);//It adds 99 at 0th index and shifts all elements to right doesnt overwrite on 0th index element
+        list.add(0,99);//It adds 99 at 0th index and shifts all elements to right doesn't overwrite on 0th index element
         list.set(1,98);//It overwrites the element and doesn't shift array by right
         list.remove(3);//Removes element at 3rd index and shifts elements to left on the right hand side of the element removed
         for(int i=0;i<list.size();i++){
@@ -24,6 +24,7 @@ public class O38Dynamic_Arrays_ArrayLists {
         System.out.println();
         //Check if the list contains the specific int/string/float etc.
         System.out.println(list.contains(23));//Checks if list contains 23
+        //0 inside Integer shows data type
         Integer[] arr= list.toArray(new Integer[0]);//stores the element of Arraylist to array
         //We use wrapper class to build array
         System.out.println(Arrays.toString(arr));
