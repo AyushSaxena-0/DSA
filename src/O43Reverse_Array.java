@@ -13,6 +13,7 @@ public class O43Reverse_Array {
         int end=arr.length-1;
         //Note we don't overwrite because in swapping odd index would become 0
         //Addition–subtraction swap fails when both variables refer to the same memory location because the original value is overwritten
+        //But that happens when start==end but here I avoided by while loop condition so I used that
         while(start<end){
         swap(arr,start,end);
         start++;
