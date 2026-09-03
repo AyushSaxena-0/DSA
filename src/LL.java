@@ -174,6 +174,8 @@ public class LL {
             addLast(val);
             return;
         }
+        //helper returns the head
+        //Sometimes head may change so we do head=head
         head=helper(index,val,head);
         size++;
     }
