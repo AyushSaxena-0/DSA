@@ -7,10 +7,10 @@ public class LL {
     //If linked list has a node at index 0 then your size is 1
     //Last index is size-1 in a linked list
     private int size;
-
     public LL() {
         this.size=0;
     }
+
     public void addFirst(int val){
         //Draw on paper and then understand
         //Firstly create a node

@@ -15,6 +15,15 @@ public static void prt(ListNode head){
         head=head.next;
     }
 }
+    public static void helper(ListNode prev,ListNode curr){
+        if(curr==null)return;
+        if(prev.val==curr.val){
+            prev.next=curr.next;
+            helper(prev,curr.next);
+            return;
+        }
+        helper(curr,curr.next);
+    }
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
