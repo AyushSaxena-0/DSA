@@ -7,6 +7,7 @@ public class LL {
     //If linked list has a node at index 0 then your size is 1
     //Last index is size-1 in a linked list
     private int size;
+
     public LL() {
         this.size=0;
     }
@@ -23,6 +24,7 @@ public class LL {
             tail=newNode;//When newNode is first Node in entire linked list
         }
     }
+
     public void print(){
         //You cannot use head for doing the things here
         //As changing the head changes the linked list itself
@@ -34,6 +36,7 @@ public class LL {
         }
         System.out.print("End");
     }
+
     public void addLast(int val){
         //if the linked list is empty then tail.next would give null pointer exception
         //So use addfirst function previously created
@@ -47,6 +50,7 @@ public class LL {
         tail=newNode;
         size++;
     }
+
     public void insertAtIndex(int val,int index){
         if(index<0||index>size)return;
         if(index==0){
@@ -73,6 +77,7 @@ public class LL {
         temp.next=newNode;
         size++;
     }
+
     public int removeFirst(){
         if(head==null)return -1;
         int val=head.val;
@@ -86,6 +91,7 @@ public class LL {
         size--;
         return val;
     }
+
     public int removeLast(){
         if(tail==null)return -1;
         int val=tail.val;
@@ -105,6 +111,7 @@ public class LL {
         size--;
         return val;
     }
+
     public int removeAtIndex(int index){
         if(index<0||index>=size)return -1;
         if(index==0){
@@ -123,6 +130,7 @@ public class LL {
         size--;
         return val;
     }
+
     public Node get(int index){
         //I am designing this to get the reference pointer to that node
         Node temp=head;
@@ -131,6 +139,7 @@ public class LL {
         }
         return temp;
     }
+
     public int deleteLast(){
         if(size<=1)return removeFirst();
         //This is alter made by kunal
@@ -141,6 +150,7 @@ public class LL {
         size--;
         return val;
     }
+
     public Node find(int value){
         //I am designing this to get the reference pointer to that node
         Node temp=head;
@@ -152,6 +162,7 @@ public class LL {
         }//Not found
         return null;
     }
+
     public int deleteAtIndex(int index){
         //This is again alter to removeAtIndex()
         if(index<0||index>=size)return -1;
@@ -164,6 +175,7 @@ public class LL {
         size--;
         return val;
     }
+
     public void insertRec(int index,int val){
         if(index<0||index>size)return;
         if(index==0){
@@ -179,6 +191,7 @@ public class LL {
         head=helper(index,val,head);
         size++;
     }
+
     public Node helper(int index,int val,Node node){
         //When index==0 then add new node and do newNode.next=curr.next
         //Then do current.next=newNode but do it by recursion
@@ -194,6 +207,74 @@ public class LL {
         node.next=helper(index-1,val,node.next);
         return node;
     }
+
+
+    //Note I solved this question again because I solved it this time by recursive approach
+    public static void helper(Node prev,Node curr){
+        if(curr==null)return;
+        if(prev.val==curr.val){
+            prev.next=curr.next;
+            helper(prev,curr.next);
+            return;
+        }
+        helper(curr,curr.next);
+    }
+
+    public void deleteDuplicates(){
+        if(head==null)return;
+        if(head.next==null)return;
+
+        helper(head,head.next);
+
+        //Update size and tail
+        size=0;
+        tail=null;
+
+        Node temp=head;
+
+        while(temp!=null){
+            tail=temp;
+            size++;
+            temp=temp.next;
+        }
+    }
+
+
+    public static LL mergeTwoLists(LL list1,LL list2) {
+        //I am going to create a new Linked List
+        //and move the pointers and compare them accordingly
+        LL list3=new LL();
+
+        Node head1=list1.head;
+        Node head2=list2.head;
+
+        while(head1!=null&&head2!=null){
+            //This is classic three pointer approach
+            //Add whichever value is less and move ahead both the used pointers ahead
+            if(head1.val<=head2.val){
+                list3.addLast(head1.val);
+                head1=head1.next;
+            }
+            else{
+                list3.addLast(head2.val);
+                head2=head2.next;
+            }
+        }
+
+        while(head1!=null){
+            list3.addLast(head1.val);
+            head1=head1.next;
+        }
+
+        while(head2!=null){
+            list3.addLast(head2.val);
+            head2=head2.next;
+        }
+
+        return list3;
+    }
+
+
     private class Node{
 
         private int val;
@@ -207,6 +288,5 @@ public class LL {
             this.val = val;
             this.next=next;
         }
-
     }
 }
