@@ -132,11 +132,12 @@ public class LL {
         return temp;
     }
     public int deleteLast(){
-        //This is alter to remove last I made by Kunal
         if(size<=1)return removeFirst();
+        //This is alter made by kunal
         Node secondLast=get(size-2);
         int val=secondLast.next.val;
         secondLast.next=null;
+        tail=secondLast;
         size--;
         return val;
     }
@@ -162,6 +163,34 @@ public class LL {
         prev.next=prev.next.next;
         size--;
         return val;
+    }
+    public void insertRec(int index,int val){
+        if(index<0||index>size)return;
+        if(index==0){
+            addFirst(val);
+            return;
+        }
+        if(index==size){
+            addLast(val);
+            return;
+        }
+        head=helper(index,val,head);
+        size++;
+    }
+    public Node helper(int index,int val,Node node){
+        //When index==0 then add new node and do newNode.next=curr.next
+        //Then do current.next=newNode but do it by recursion
+        //You need to observe how it is done
+        if(index==0){
+            //Create a newNode
+            Node newNode=new Node(val);
+            //Add newNode.next=node
+            newNode.next=node;//Alter you could have done this by constructor itself as done by kunal
+            // Node newNode=new Node(val,node) this already set newNode.next to node
+            return newNode;
+        }
+        node.next=helper(index-1,val,node.next);
+        return node;
     }
     private class Node{
 
