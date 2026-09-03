@@ -267,6 +267,34 @@ public class LL {
         }
         return false;
     }
+    public int lengthOfCycle() {
+        if (head == null || head.next == null) {
+            return 0;
+        }
+        int length=0;
+        // Classic Floyd Cycle Detection
+        Node slow = head;
+        Node fast = head;
+        /*
+         * Once both pointers are inside the cycle,
+         * their relative speed is 1 node per iteration.
+         * Therefore, fast must eventually catch slow.
+         */
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+
+            if (slow == fast) {
+                //Now move slow pointer till it meets fast again and count every step to get length
+                do{
+                    slow = slow.next;
+                    length++;
+                }while(slow!=fast);
+                return length;
+            }
+        }
+        return 0;
+    }
     private class Node{
 
         private int val;

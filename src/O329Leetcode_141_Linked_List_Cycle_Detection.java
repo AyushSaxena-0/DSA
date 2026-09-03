@@ -11,5 +11,6 @@ public class O329Leetcode_141_Linked_List_Cycle_Detection {
         list.addLast(6);
 
         System.out.println(list.hasCycle());
+        System.out.println(list.lengthOfCycle());
     }
 }
