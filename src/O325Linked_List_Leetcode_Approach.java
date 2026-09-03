@@ -11,6 +11,8 @@ public class O325Linked_List_Leetcode_Approach {
         list.addFirst(1);
         list.addFirst(0);
         list.insertRec(6,6);
+        //insertion by recursion is very interesting to watch
+        //Debug it and see it yourself
         list.insertRec(3,300);
         list.print();
     }
