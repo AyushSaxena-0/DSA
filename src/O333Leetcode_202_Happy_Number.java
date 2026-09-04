@@ -2,7 +2,7 @@ import java.util.HashSet;
 //Can you imagine this is a Google Question
 public class O333Leetcode_202_Happy_Number {
     public static int sumOfSquareOfDigits(int n){
-        //finding the digites and storing sum of square of digit
+        //finding the digits and storing sum of square of digit
         int sum=0;
         while(n>0){
             int digit=n%10;
