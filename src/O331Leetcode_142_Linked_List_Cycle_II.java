@@ -31,14 +31,22 @@ public class O331Leetcode_142_Linked_List_Cycle_II {
         }
         return null;
     }
-//Alternative approach is firstly find length of the cycle
-//Move the first pointer length of cycle times
-//Then start moving both the pointer together {Note since second pointer is stuck in look then even moving it length of cycle would bring it back to same position however the first pointer starting from head would reach l steps}
-//Now increment both cycle in loop till they become equal
-//Resultant node is answer
-//Above mentioned is Kunal's approach it is similar how arr[(i+n)%n] =arr[i]
-//Remember that the meeting point of two pointers in a linked list in a loop is exactly as far away from the loop starting node as from the head to start of loop node
-//Learn the relation
+    //Alternative approach is firstly find length of the cycle
+    //Move the first pointer length of cycle times
+    //Then start moving both the pointer together {Note since second pointer is stuck in look then even moving it length of cycle would bring it back to same position however the first pointer starting from head would reach l steps}
+    //Now increment both cycle in loop till they become equal
+    //Resultant node is answer
+    //Above-mentioned is Kunal's approach it is similar how arr[(i+n)%n] =arr[i]
+    //Remember that the meeting point of two pointers in a linked list in a loop is exactly as far away from the loop starting node as from the head to start of loop node
+    //Learn the relation
+    //from head till point where slow and fast pointer meet consider saying it point I (Intersection point)
+    //Now take pointer three from start
+    //Move the pointer three equal to length of cycle times
+    //Now observe remaining distance in cycle till start node is (l-(l-k))
+    //Now see distance from head to first node of loop is equal to k
+    //And distance from meeting point of third and (slow and fast pointer meeting point) are both equal to k
+    //Thus move both third and slow (or fast pointer but move only once in either cases) pointer once and the point where third and the slow(or fast) meet becomes the first node of loop
+
 
     public static void main(String[] args) {
         ListNode n1 = new ListNode(3);
