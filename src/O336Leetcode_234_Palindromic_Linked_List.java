@@ -45,9 +45,6 @@ public class O336Leetcode_234_Palindromic_Linked_List {
         head.next.next = new ListNode(3);
         head.next.next.next = new ListNode(2);
         head.next.next.next.next = new ListNode(1);
-
-        Solution sol = new Solution();
-
         System.out.println(isPalindrome(head));
     }
 }
