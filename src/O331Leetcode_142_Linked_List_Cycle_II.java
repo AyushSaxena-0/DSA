@@ -37,8 +37,7 @@ public class O331Leetcode_142_Linked_List_Cycle_II {
     //Now increment both cycle in loop till they become equal
     //Resultant node is answer
     //Above-mentioned is Kunal's approach it is similar how arr[(i+n)%n] =arr[i]
-    //Remember that the meeting point of two pointers in a linked list in a loop is exactly as far away from the loop starting node as from the head to start of loop node
-    //Learn the relation
+    //After slow and fast meet, the distance from the meeting point back to the cycle start is equal to the distance from head to the cycle start (modulo the cycle length). Therefore, resetting one pointer to head and moving both one step at a time makes them meet at the cycle start.    //Learn the relation
     //from head till point where slow and fast pointer meet consider saying it point I (Intersection point)
     //Now take pointer three from start
     //Move the pointer three equal to length of cycle times
