@@ -1,5 +1,5 @@
 import java.util.HashSet;
-
+//Can you imagine this is a Google Question
 public class O333Leetcode_202_Happy_Number {
     public static int sumOfSquareOfDigits(int n){
         //finding the digites and storing sum of square of digit
@@ -26,8 +26,23 @@ public class O333Leetcode_202_Happy_Number {
         }
         return true;
     }
-
+    //Alternative approach
+    //The sum of square of digits would start repeating thus it could be imagined like a linked list containing a cycle
+    //Take two pointers fast and slow do square two times in fast pointer and one time in slow
+    //If they meet when the sum==1
+    //Otherwise it is just a endless loop and sum never reaches 1 so return false
+    public static boolean isHappy2(int n){
+        int slow=n;
+        int fast=n;
+        do {
+            slow = sumOfSquareOfDigits(slow);
+            fast = sumOfSquareOfDigits(sumOfSquareOfDigits(fast));//Moving two times
+        }while(slow!=fast);
+        if(slow==1)return true;
+        return false;
+    }
     public static void main(String[] args) {
         System.out.println(isHappy(19));
+        System.out.println(isHappy2(19));
     }
 }
