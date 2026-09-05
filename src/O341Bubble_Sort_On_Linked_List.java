@@ -17,7 +17,6 @@ public class O341Bubble_Sort_On_Linked_List {
         //Now observe the approach is almost same but since we cannot access any index in linked list so we need a get method
         //That's how you would learn
         //Think like an Engineer
-        if(head==null)return null;
         if(row==0)return head;
         if(col>=row)return bubbleSort(head,row-1,0);
         else if (col<row){
@@ -50,6 +49,8 @@ public class O341Bubble_Sort_On_Linked_List {
         //I have already solved it by using merge sort but i want to apply bubble sort on the linked list
         //But i need size
         //We now have the size
+
+        if(head==null)return null;
         int size=getSize(head);
         return bubbleSort(head,size-1,0);
     }
