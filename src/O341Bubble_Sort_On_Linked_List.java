@@ -23,7 +23,7 @@ public class O341Bubble_Sort_On_Linked_List {
             ListNode first=getIndex(head,col);
             ListNode second=getIndex(head,col+1);
             //Now move the bigger node towards right so that end of each pass largest reaches the end
-            if(first!=null&&second!=null&&first.val>second.val){
+            if(first.val>second.val){
                 first.next=second.next;
                 second.next=first;
                 if(first==head)head=second;
