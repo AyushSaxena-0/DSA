@@ -32,6 +32,10 @@ public class O343Reverse_Linked_List {
         //Store result from previous recursion and use it for your case
         //We needed a tail so we created a node called tail which
         ListNode tail=reverseList2(node.next);//Tail is the new head
+        //Think of animating it like moving from last node to first node automatically
+        //You just need to change the direction of linked list
+        //Also you can't do anything without the previous node with that node as this is a singly linked list it can only change what point next
+        //This is the beauty of recusion
         node.next.next=node;
         node.next=null;
         return tail;//It was made because of this
