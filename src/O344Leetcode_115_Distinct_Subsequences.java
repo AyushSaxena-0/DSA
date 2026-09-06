@@ -37,5 +37,6 @@ public class O344Leetcode_115_Distinct_Subsequences {
         String s="Axyzbc";
         String t="Abc";
         System.out.println(numDistinct(s,t));
+        System.out.println(numDistinct("rabbbit","rabit"));
     }
 }
