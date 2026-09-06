@@ -27,12 +27,10 @@ public class O344Leetcode_115_Distinct_Subsequences {
         }
         return helper(s,t,0,0,dp);
     }
-
     /*
         Subsequence: Characters can be skipped, but their original order must remain the same.
         Substring: Characters must be continuous/consecutive in the original text.
     */
-
     public static void main(String[] args) {
         String s="Axyzbc";
         String t="Abc";
