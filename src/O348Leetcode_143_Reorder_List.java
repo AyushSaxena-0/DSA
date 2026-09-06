@@ -57,6 +57,27 @@ public class O348Leetcode_143_Reorder_List {
     }
 
     public static void main(String[] args) {
+        // Test Case 1
+        ListNode head1 = ListNode.createList(new int[]{1, 2, 3, 4, 5});
 
+        System.out.print("Before: ");
+        ListNode.printList(head1);
+
+        reorderList(head1);
+
+        System.out.print("After:  ");
+        ListNode.printList(head1);
+
+
+        // Test Case 2
+        ListNode head2 = ListNode.createList(new int[]{1, 2, 3, 4});
+
+        System.out.print("\nBefore: ");
+        ListNode.printList(head2);
+
+        reorderList(head2);
+
+        System.out.print("After:  ");
+        ListNode.printList(head2);
     }
 }
