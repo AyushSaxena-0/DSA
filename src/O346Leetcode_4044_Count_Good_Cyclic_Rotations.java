@@ -4,6 +4,7 @@ public class O346Leetcode_4044_Count_Good_Cyclic_Rotations {
         long last=0;
         int n=nums.length;
         int count=0;
+
         for(int i=0;i<n/2;i++){
             first=first+nums[i];
         }
