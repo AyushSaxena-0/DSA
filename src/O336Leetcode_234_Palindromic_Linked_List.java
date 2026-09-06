@@ -38,7 +38,8 @@ public class O336Leetcode_234_Palindromic_Linked_List {
         if(leftlist.equals(rightlist))return true;
         return false;
     }
-
+    //Alter reverse linked list from mid
+    //Traverse from start and mid together till start reaches mid if not equal return false other wise true
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
