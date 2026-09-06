@@ -9,7 +9,7 @@ public class O344Leetcode_115_Distinct_Subsequences {
         if(i==s.length())return 0;
         if(dp[i][j]!=-1)return dp[i][j];
         if(s.charAt(i)==t.charAt(j)){
-            //Note that if both characters are eqaul only then we are moving ahead in this if block
+            //Note that if both characters are equal only then we are moving ahead in this if block
             //Now also there are two choice pick or skip
             int pick=helper(s,t,i+1,j+1,dp);
             int skip=helper(s,t,i+1,j,dp);
