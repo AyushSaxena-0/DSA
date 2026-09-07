@@ -28,6 +28,8 @@ public class O356Leetcode_25_Reverse_Nodes_In_K_Group {
         ListNode leftNode=get(head,left);
         ListNode rightNode=get(head,right);
         ListNode nextToEnd=(rightNode==null)?null:rightNode.next;
+        //Break the list
+        //So that you can reverse the list
         rightNode.next = null;
 
         if(left == 1){
@@ -41,8 +43,6 @@ public class O356Leetcode_25_Reverse_Nodes_In_K_Group {
         while((beforeToHead!=null)&&beforeToHead.next!=leftNode){
             beforeToHead=beforeToHead.next;
         }
-        //Break the rightnode.next otherwise it would be in endless loop
-        if(rightNode!=null)rightNode.next=null;
         //Now reverse
         if(beforeToHead!=null)beforeToHead.next=reverse(leftNode);
         if(leftNode!=null)leftNode.next=nextToEnd;
