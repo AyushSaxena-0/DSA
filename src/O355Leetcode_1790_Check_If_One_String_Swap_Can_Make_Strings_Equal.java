@@ -1,6 +1,5 @@
 public class O355Leetcode_1790_Check_If_One_String_Swap_Can_Make_Strings_Equal {
     public static boolean areAlmostEqual(String s1, String s2) {
-
         //See if both string's length are not equal then anyway you cannot make them equal
         if(s1.length()!=s2.length())return false;
         //Now if there are more than two non equal alphabets then also swapping won't make them equal
