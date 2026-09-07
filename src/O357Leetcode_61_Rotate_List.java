@@ -48,6 +48,5 @@ public class O357Leetcode_61_Rotate_List {
         head.next.next.next.next.next.next.next=new ListNode(8);
         head=rotateRight(head,3);
         print(head);
-
     }
 }
