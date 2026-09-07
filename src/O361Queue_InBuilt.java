@@ -6,6 +6,7 @@ public class O361Queue_InBuilt {
         Queue<Integer> queue=new LinkedList<>();
         //Queue offers adding on top and removing from bottom
         //Thus it is implemented using linked list
+        //Adding in front and back is done in O(1) in linked list by using head and tail
         queue.offer(1);
         queue.offer(2);
         queue.offer(3);
