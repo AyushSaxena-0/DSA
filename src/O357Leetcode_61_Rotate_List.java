@@ -10,7 +10,7 @@ public class O357Leetcode_61_Rotate_List {
     }
     public static ListNode rotateRight(ListNode head, int k) {
         //Alternate is reach size-k-1 and then put heat entire part in front and update the new had and make the next of size-k-1 th node as null
-        if(head==null||head.next==null)return head;
+        if(k<=0||head==null||head.next==null)return head;
         int size=sizeL(head);
         k=k%size;//If length is 6 rotating it 6 times would give same list
         int times=0;
