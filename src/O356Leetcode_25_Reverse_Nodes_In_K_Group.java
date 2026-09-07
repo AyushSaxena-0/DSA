@@ -1,5 +1,5 @@
 public class O356Leetcode_25_Reverse_Nodes_In_K_Group {
-    //Modify for alternate k Group
+    //Modify for alternate k Group skip the next k nodes by using a for loop
     public static ListNode reverse(ListNode head){
         if(head==null||head.next==null)return head;
         ListNode current=head;
