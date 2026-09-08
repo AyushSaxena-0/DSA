@@ -1,9 +1,9 @@
 public class O367CircularQueue {
 
-    private int[]data;
-    private int start=0;
-    private int end=0;
-    private int size=0;
+    protected int[]data;
+    protected int start=0;
+    protected int end=0;
+    protected int size=0;
     public static int DEFAULT_CAPACITY=10;
 
     public O367CircularQueue(){
