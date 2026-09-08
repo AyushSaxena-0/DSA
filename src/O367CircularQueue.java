@@ -3,6 +3,7 @@ public class O367CircularQueue {
     private int[]data;
     private int start=0;
     private int end=0;
+    private int size=0;
     public static int DEFAULT_CAPACITY=10;
 
     public O367CircularQueue(){
@@ -14,24 +15,29 @@ public class O367CircularQueue {
     }
 
     public boolean isEmpty(){
-        return start==end;
+        return size==0;
     }
     public boolean isFull(){
         //Note this condition
-        return end==start+1;
+        return size==data.length;
     }
     public boolean add(int value)throws Exception{
         if(isFull()){
             throw new Exception("Queue is full");
         }
         data[end++]=value;
+        end=end%data.length;
+        size++;
         return true;
     }
     public int remove()throws Exception{
         if(isEmpty()){
             throw new Exception("Queue is empty");
         }
-        return data[start++];
+        int removed=data[start++];
+        start=start%data.length;
+        size--;
+        return removed;
     }
     public int peek()throws Exception{
         if(isEmpty()){
@@ -39,5 +45,17 @@ public class O367CircularQueue {
         }
         return data[start];
     }
+    public void display() {
+        if(isEmpty()){
+            System.out.println("Empty");
+        }
+        int i = start;
+        do {
+            System.out.println(data[i]);
+            i++;
+            i=i%data.length;
+        } while (i < end);
 
+    }
 }
+
