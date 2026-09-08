@@ -17,6 +17,6 @@ public class O365DynamicStack extends O358CustomStack{
             }
             data=temp;
         }
-        return true;
+        return super.push(val);
     }
 }
