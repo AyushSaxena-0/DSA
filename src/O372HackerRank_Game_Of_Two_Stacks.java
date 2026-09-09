@@ -32,11 +32,8 @@ public class O372HackerRank_Game_Of_Two_Stacks {
     public static void main(String[] args) {
         List<Integer> a = new ArrayList<>(Arrays.asList(4, 2, 4, 6, 1));
         List<Integer> b = new ArrayList<>(Arrays.asList(2, 1, 8, 5));
-
         int maxSum = 10;
-
         int result = twoStacks(maxSum, a, b);
-
         System.out.println(result);
     }
 }
