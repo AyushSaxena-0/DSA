@@ -44,7 +44,8 @@ class MyQueue {
         }
         return ans;
     }
-
+//For pop efficient you can make push function like adding all elements of stack1 in stack2 then adding element then putting back all elements
+//Then in pop function pop from top which is first element always
 
     public boolean empty() {
         return stack1.isEmpty();
