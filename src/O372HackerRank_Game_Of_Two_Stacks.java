@@ -5,6 +5,9 @@ import java.util.List;
 public class O372HackerRank_Game_Of_Two_Stacks {
     public static int twoStacks(int maxSum, List<Integer> a, List<Integer> b) {
         // Write your code here
+        //Won't pass all testcases on HackerRank
+        //This is a recursive solution you can solve it by DP
+
         if(maxSum<=0)return 0;
         int e=0;
         int pickA=0;
