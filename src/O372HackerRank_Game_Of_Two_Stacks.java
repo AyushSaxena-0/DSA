@@ -31,7 +31,7 @@ public class O372HackerRank_Game_Of_Two_Stacks {
         }
         return Math.max(pickA,pickB);
     }
-
+//I would add approach later
     public static void main(String[] args) {
         List<Integer> a = new ArrayList<>(Arrays.asList(4, 2, 4, 6, 1));
         List<Integer> b = new ArrayList<>(Arrays.asList(2, 1, 8, 5));
