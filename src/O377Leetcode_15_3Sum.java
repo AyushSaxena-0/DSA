@@ -9,7 +9,7 @@ public class O377Leetcode_15_3Sum {
         //Avoid duplicates by while loop
         Arrays.sort(nums);
         List<List<Integer>>list=new ArrayList<>();
-        for(int i=0;i<nums.length;i++){
+        for(int i=0;i<nums.length-1;i++){
             int left=i+1;
             int right=nums.length-1;
             if(i>0&&nums[i]==nums[i-1])continue;
