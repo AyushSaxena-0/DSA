@@ -4,6 +4,7 @@ public class O380Leetcode_75_Sort_Colours_Dutch_National_Flag {
     public static void sortColors(int[] nums) {
         //Brute force consists of creating separate arraylist for 0,1,2 but optimaml approach is this
         //Count all zeros,ones and twos then just overwrite
+        //Also known by name of Dutch National Flag
         int zeros=0;
         int ones=0;
         int twos=0;
@@ -24,6 +25,38 @@ public class O380Leetcode_75_Sort_Colours_Dutch_National_Flag {
             else nums[i]=2;
         }
     }
+    //Alter make three pointers one starting from left having 0
+    //One from right for 2
+    //one mid moves from left=0 to right
+    /*
+    public void swap(int[]nums,int i,int j){
+        int temp=nums[i];
+        nums[i]=nums[j];
+        nums[j]=temp;
+    }
+    public void sortColors(int[] nums) {
+        int left=0;
+        int right=nums.length-1;
+        int mid=0;
+        //This does it in only one pass
+        while(mid<=right){
+            if(nums[mid]==0){
+                //swap with left pointer and move left ahead by one
+                swap(nums,mid,left);
+                left++;
+                mid++;
+            }
+            else if(nums[mid]==1){
+                mid++;
+            }
+            else{
+                swap(nums,mid,right);
+                right--;
+            }
+        }
+
+    }
+     */
 
     public static void main(String[] args) {
         int[]nums=new int[]{1,0,1,2,1,2};
