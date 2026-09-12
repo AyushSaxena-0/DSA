@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-public class O383Leetcode_Count_Values_With_Equally_Spaced_Occurance{
+public class O383Leetcode_4048_Count_Values_With_Equally_Spaced_Occurance {
     public static int countSpecialIntegers(int[] nums) {
         int special=0;
         HashSet<Integer> set=new HashSet<>();
