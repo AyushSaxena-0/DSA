@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class O378Leetcode_16_3_Sum_Closest {
+public class O378Two_Pointers_Leetcode_16_3_Sum_Closest {
     public static int threeSumClosest(int[] nums, int target) {
         int minDiff=Integer.MAX_VALUE;
         int closestSum=0;

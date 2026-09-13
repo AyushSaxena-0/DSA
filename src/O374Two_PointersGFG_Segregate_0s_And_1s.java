@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class O374GFG_Segregate_0s_And_1s {
+public class O374Two_PointersGFG_Segregate_0s_And_1s {
     //You can solve by using Arrays.sort also
     static void segregate0and1(int[] arr) {
         // code here

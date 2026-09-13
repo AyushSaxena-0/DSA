@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class O379GFG_Triplets_With_Smaller_Sum {
+public class O379Two_Pointers_GFG_Triplets_With_Smaller_Sum {
     public static int countTriplets(int target, int []nums) {
         int count=0;
         Arrays.sort(nums);

@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class O373Leetcode_167_Two_Sum_II_Input_Array_Is_Sorted {
+public class O373Two_Pointers_Leetcode_167_Two_Sum_II_Input_Array_Is_Sorted {
     public static int[] twoSum(int[] numbers, int target) {
         int n=numbers.length-1;
         int i=0;

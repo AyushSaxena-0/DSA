@@ -1,4 +1,4 @@
-public class O382Leetcode_209_Minimum_Size_Subarray {
+public class O382Sliding_Window_Leetcode_209_Minimum_Size_Subarray {
     public static int minSubArrayLen(int target, int[] nums) {
         int left=0;
         int right=0;

@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class O380Leetcode_75_Sort_Colours_Dutch_National_Flag {
+public class O380Two_Pointers_Leetcode_75_Sort_Colours_Dutch_National_Flag {
     public static void sortColors(int[] nums) {
         //Brute force consists of creating separate arraylist for 0,1,2 but optimaml approach is this
         //Count all zeros,ones and twos then just overwrite

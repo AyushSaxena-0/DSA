@@ -1,4 +1,4 @@
-public class O381GFG_Max_Sum_Subarray_Of_Size_K {
+public class O381Sliding_Window_GFG_Max_Sum_Subarray_Of_Size_K {
     public static int maxSubarraySum(int[] arr, int k) {
         // Code here
         //Subarray->Sliding window pattern

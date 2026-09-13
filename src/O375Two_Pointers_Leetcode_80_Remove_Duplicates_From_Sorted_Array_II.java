@@ -1,6 +1,4 @@
-import java.util.Arrays;
-
-public class O375Leetcode_80_Remove_Duplicates_From_Sorted_Array_II {
+public class O375Two_Pointers_Leetcode_80_Remove_Duplicates_From_Sorted_Array_II {
     public static int removeDuplicates(int[] nums) {
         //Really love this approach
         //The i pointer moves in array from start to end

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class O377Leetcode_15_3Sum {
+public class O377Two_Pointers_Leetcode_15_3Sum {
     public static List<List<Integer>> threeSum(int[] nums) {
         //Three sum is just two sum n times
         //Fix one number then choose two numbers then apply two sum

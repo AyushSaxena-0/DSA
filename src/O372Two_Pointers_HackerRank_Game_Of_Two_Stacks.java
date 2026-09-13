@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class O372HackerRank_Game_Of_Two_Stacks {
+public class O372Two_Pointers_HackerRank_Game_Of_Two_Stacks {
     public static int twoStacks(int maxSum, List<Integer> a, List<Integer> b) {
         // Write your code here
         //Won't pass all testcases on HackerRank
