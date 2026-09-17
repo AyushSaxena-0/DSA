@@ -4,7 +4,7 @@ public class O395Kadane_Algorithm_Leetcode_1749_Maximum_Absolute_Sum_Of_Any_Sub_
         //A highly negative sum or highly positive sum max of both mod value
         int min=nums[0];
         int max=nums[0];
-        int best=Math.abs(nums[0]);
+        int best=Math.abs(nums[0]);//Because absolute value is asked
 
         for(int i=1;i<nums.length;i++){
             int currMin=Math.min(min+nums[i],nums[i]);
