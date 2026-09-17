@@ -1,4 +1,4 @@
-public class O393Sliding_Window_Leetcode_152_Maximum_Product_Subarray {
+public class O393Kadane_Algorithm_Leetcode_152_Maximum_Product_Subarray {
     public static int maxProduct(int[] nums) {
 
         int ans=nums[0];
