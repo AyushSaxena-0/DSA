@@ -16,7 +16,7 @@ public class O396Kadane_Algorithm_Leetcode_918_Maximum_Sum_Circular_Subarray {
             bestn=Math.min(bestn,min);
             sum+=nums[i];
         }
-        if(bestx<0)return bestx;
+        if(bestx<0)return bestx;//Otherwise sum would be zerow hich is not possible
         return Math.max(bestx,sum-bestn);
     }
 
