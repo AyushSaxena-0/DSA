@@ -17,6 +17,7 @@ public class O396Kadane_Algorithm_Leetcode_918_Maximum_Sum_Circular_Subarray {
             sum+=nums[i];
         }//Alter you can create Two variables and notice sum-prefix[i]==prefix[i] for both prefix and suffix to be equal
         //Suffix=sum-prefix
+        //Note this step
         if(bestx<0)return bestx;//Otherwise sum would be zero which is not possible
         return Math.max(bestx,sum-bestn);
     }
