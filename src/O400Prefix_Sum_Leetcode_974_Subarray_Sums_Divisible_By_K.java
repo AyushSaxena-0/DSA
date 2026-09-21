@@ -35,5 +35,6 @@ public class O400Prefix_Sum_Leetcode_974_Subarray_Sums_Divisible_By_K {
     public static void main(String[] args) {
         int[]arr={1,2,3,4};
         System.out.println(subarraysDivByK(arr,2));
+        //Revise the patterns
     }
 }
