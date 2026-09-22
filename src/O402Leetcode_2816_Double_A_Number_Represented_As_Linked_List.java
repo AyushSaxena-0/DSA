@@ -39,7 +39,7 @@ public class O402Leetcode_2816_Double_A_Number_Represented_As_Linked_List {
         ListNode temp = result;
 
         while (temp != null) {
-            System.out.print(temp.val + " ");
+            System.out.print(temp.val + "->");
             temp = temp.next;
         }
     }
