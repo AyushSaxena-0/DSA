@@ -21,7 +21,7 @@ public class O401Prefix_Sum_Leetcode_525_Contiguous_Subarray {
             }else{//Put the sum in array
                 map.put(sum,i);
             }
-        }//If the max was -1 then there was no such subarray return 0
+        }//If the max was -1 then there was no such subarray return  0
         return max==-1?0:max;
     }
 
