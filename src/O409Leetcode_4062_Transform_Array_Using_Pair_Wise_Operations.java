@@ -6,7 +6,6 @@ public class O409Leetcode_4062_Transform_Array_Using_Pair_Wise_Operations {
 
         for(int x:source){
             sum1+=x;
-
         }
         for(int x:target){
             sum2+=x;
