@@ -3,7 +3,7 @@ import java.util.Stack;
 
 public class O413Stacks_Leetcode_20_Valid_Parentheses {
     public static boolean isValid(String s) {
-        //Push only openening brackets you cannot push } and then { those won't cancel
+        //Push only opening brackets you cannot push } and then { those won't cancel
         //So it is best to not push } and return false
         HashMap<Character,Character> map=new HashMap<>();
 
