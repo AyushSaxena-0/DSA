@@ -12,6 +12,7 @@ public class O414Stacks_Leetcode_739_Daily_Temperatures {
         stack.push(n-1);
         //Now i am going pop the next smaller indexes
         for(int i=n-2;i>=0;i--){
+            //Move from right to left in next greater or next smaller elements and left or right in previous smaller and previous greater elements
             while(!stack.isEmpty()&&temperatures[stack.peek()]<=temperatures[i]){
                 //Pop the elements
                 stack.pop();
