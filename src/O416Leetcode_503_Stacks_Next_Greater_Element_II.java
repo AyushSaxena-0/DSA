@@ -1,9 +1,12 @@
+import java.util.Arrays;
+import java.util.Stack;
+
 public class O416Leetcode_503_Stacks_Next_Greater_Element_II {
-    public int[] nextGreaterElements(int[] nums) {
+    public static int[] nextGreaterElements(int[] nums) {
 
         //Just need to push all elements of array as for last element they are available
         //Then just repeat the NGE I code
-        Stack<Integer>stack=new Stack<>();
+        Stack<Integer> stack=new Stack<>();
         int[]res=new int[nums.length];
         for(int i=nums.length-2;i>=0;i--){
             stack.push(nums[i]);
@@ -24,4 +27,8 @@ public class O416Leetcode_503_Stacks_Next_Greater_Element_II {
         return res;
     }
     //Alter is iterate array two times
+    public static void main(String[] args) {
+        int[]nums={6,11,3,4,5};
+        System.out.println(Arrays.toString(nextGreaterElements(nums)));
+    }
 }
