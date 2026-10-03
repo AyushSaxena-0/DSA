@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class O415Sstacks_Leetcode_1209_Remove_All_Adjacent_In_String_II {
+public class O415Stacks_Leetcode_1209_Remove_All_Adjacent_In_String_II {
     public static String removeDuplicates(String s, int k) {
         //Note here array could be kept in stack with two indexes first telling the character
         //Second index for number of times this is together
