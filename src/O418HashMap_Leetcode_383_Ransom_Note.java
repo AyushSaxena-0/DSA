@@ -3,7 +3,7 @@ import java.util.Map;
 
 public class O418HashMap_Leetcode_383_Ransom_Note {
     public static boolean canConstruct(String ransomeNote, String magazine) {
-        //Create two hashmaps to store available numebr of characters
+        //Create two hashmaps to store available number of characters
         Map<Character,Integer> map1=new HashMap<>();
         Map<Character,Integer>map2=new HashMap<>();
         //Fill Both hashmaps
