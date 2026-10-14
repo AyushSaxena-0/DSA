@@ -16,7 +16,7 @@ public class Main {
         //A class is a blueprint that defines the data field and behavior of methods
         Student ayush;//This is ayush pointing to null
         //ayush is declared and is in stack but points to null
-        //             new int new Student() allots memory dynamically during the run time
+        //new int new Student() allots memory dynamically during the run time
         ayush=new Student(1,"Ayush", 96.6F);
         System.out.println(ayush.roll+" "+ayush.name+ " "+ayush.marks);
         ayush.greeting();
@@ -57,10 +57,10 @@ public class Main {
 //            name="Default";
 //            marks=0;
 //        }
-        Student(){
+    Student(){
         //One constructor calling another constructor
             this(0,"Default",0);
-        }
+    }
     Student(int roll,String name,float marks){
         this.roll=roll;
         this.name=name;

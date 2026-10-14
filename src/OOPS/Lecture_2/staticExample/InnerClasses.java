@@ -32,7 +32,7 @@ public class InnerClasses {
         //What would be the output?As both of them are static !
 //        System.out.println(obj1.name);
 //        System.out.println(obj2.name);
-        //But static means that not dependent on object they why diffrent name is printed per object?
+        //But static means that not dependent on object then why diffrent name is printed per object?
         //Static means that static class Test is not dependent on objects of outer class (named as "InnerClass" here)
         //Static class doesn't mean that it won't have its own object
         //You cannot do this
