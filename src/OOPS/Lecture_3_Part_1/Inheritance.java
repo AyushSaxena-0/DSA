@@ -31,7 +31,7 @@ public class Inheritance {
         //This is because you would then try to access weight but that is not possible
         //The object that you are referencing to in the heap memory does not contain weight in it
         //So this won't work and give error
-        //Referance variable is in stack and object is in heap memory
+        //Reference variable is in stack and object is in heap memory
         //Box pointing to BoxWeight in heap memory would work as all the variables of Box are available in BoxWeight
         //Observe that parent class constructor is called first as child is dependent on parent class
         //So parent class constructor is called first

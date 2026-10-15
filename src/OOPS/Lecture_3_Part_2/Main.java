@@ -7,7 +7,7 @@ public class Main {
     Main(double l){
         this.l=l;
     }
-    //To access private variable l outside class you can use public getL method to access ut outside this class
+    //To access private variable l outside class you can use public getL method to access l outside this class
     public double getL(){
         return l;
     }
