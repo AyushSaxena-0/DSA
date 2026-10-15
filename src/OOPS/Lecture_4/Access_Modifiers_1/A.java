@@ -1,16 +1,23 @@
 package OOPS.Lecture_4.Access_Modifiers_1;
 
-/* Access modifier table
+/*
+              Java Access Modifiers Table
 
-              | Class | Package | Subclass      | Subclass       | World
-              |       | (Same)  | (same pkg)    | (diff pkg)     | (diff pkg & not subclass)
-------------------------------------------------------------------------------------------------
-public        |   +   |    +    |      +        |      +         |        +
-protected     |   +   |    +    |      +        |      +         |
-no modifier   |   +   |    +    |      +        |                |
-private       |   +   |         |               |                |
+              | Same  | Same    | Subclass     | Non-Subclass
+              | Class | Package | (Diff Pkg)   | (Diff Pkg)
+---------------------------------------------------------------
+public        |   +   |    +    |      +       |      +
+protected     |   +   |    +    |      +*      |      -
+default       |   +   |    +    |      -       |      -
+private       |   +   |    -    |      -       |      -
 
-     */
++  = Accessible
+-  = Not Accessible
+
+* Protected members are accessible in subclasses in different
+  packages, subject to Java's cross-package access rules.
+
+*/
 
 public class A {
     private int num;
