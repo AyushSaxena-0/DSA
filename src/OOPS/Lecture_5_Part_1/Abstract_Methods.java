@@ -1,7 +1,7 @@
 package OOPS.Lecture_5_Part_1;
 
 public class Abstract_Methods {
-    //Abstract methods are methods which are declared in parent abstract class without their implementationa nd body
+    //Abstract methods are methods which are declared in parent abstract class without their implementation and body
     //Abstract methods are not implemented in parent abstract class
     //Abstract methods are implemented in child classes
     //Abstract class can contain both abstract and non-abstract methods

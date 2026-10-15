@@ -15,7 +15,10 @@ public abstract class Parent {
     //Note abstract methods cannot be static as abstract methods need object for their implementation
     //And static methods are not dependent on object hence no logic of creating static abstract methods
 
-    public Parent() {
+    public Parent(){
+        VALUE=100;
+    }
+    public Parent(int age) {
         this.age=age;
         VALUE=100;
     }

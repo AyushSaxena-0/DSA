@@ -10,7 +10,7 @@ public class Main {
         //So i need to do a few things like :-
         //1) Access the data members
         //2) Modify the data members
-        // System.out.println(obj.num); Won't work as num is declared private and you cannot access it directly
+        //System.out.println(obj.num); Won't work as num is declared private and you cannot access it directly
         //Use getter and setter method
         System.out.println(obj.getNum());//This would work as getter method is public
     }
