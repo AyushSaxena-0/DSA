@@ -3,7 +3,7 @@ package OOPS.Lecture_4.Access_Modifiers_1;
 /* Access modifier table
 
               | Class | Package | Subclass      | Subclass       | World
-              |       |         | (same pkg)    | (diff pkg)     | (diff pkg & not subclass)
+              |       | (Same)  | (same pkg)    | (diff pkg)     | (diff pkg & not subclass)
 ------------------------------------------------------------------------------------------------
 public        |   +   |    +    |      +        |      +         |        +
 protected     |   +   |    +    |      +        |      +         |
