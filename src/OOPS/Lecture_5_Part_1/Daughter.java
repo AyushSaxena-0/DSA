@@ -2,6 +2,7 @@ package OOPS.Lecture_5_Part_1;
 
 public class Daughter extends Parent {
     public Daughter(int age) {
+        super();
         this.age=age;
     }
     @Override
