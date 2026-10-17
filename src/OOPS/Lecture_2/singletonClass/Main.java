@@ -2,8 +2,8 @@ package OOPS.Lecture_2.singletonClass;
 
 public class Main {
     public static void main(String[] args) {
-        //Basically you have a public class and a private constructor
-        //You have a static method to get instance
+        //Basically you have a public class and a private constructor and a private variable of Student type
+        //You have a static method to get private instance
         //you have a static class type variable inside the public singleton class
         //You can only access private methods in that class only so you call the constructor in getinstance
         //if object doesn't exist you create one and if it does

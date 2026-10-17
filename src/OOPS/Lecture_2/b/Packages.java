@@ -10,6 +10,7 @@ public class Packages {
         //I am going to use arraySum() function from Trial class in OOPS.Lecture_2.a.Trial
         int[]arr={1,2,3,4,5,6,7};
         //Look i used the arraySum() function from above class
+        //arraySum() function was static in nature so no object creation was necessary
         System.out.println(Trial.arraySum(arr));
     }
 }
