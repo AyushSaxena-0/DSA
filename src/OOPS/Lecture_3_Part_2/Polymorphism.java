@@ -1,6 +1,7 @@
 package OOPS.Lecture_3_Part_2;
     //final keyword :- A method which is declared final cannot be overridden
-    //final is also used to prevent inheritance
+    //final class cannot be inherited
+    //final variable cannot be reassigned (directly in class or even indirectly through inheritance)
     //Early Binding: Method call is resolved at compile time; e.g., final method cannot be overridden.
     //Late Binding: Method call is resolved at runtime based on the actual object; e.g., method overriding.
     //static methods cannot be overridden as they are independent of objects of class
