@@ -5,7 +5,7 @@ package OOPS.Lecture_3_Part_2;
     //Early Binding: Method call is resolved at compile time; e.g., final method cannot be overridden.
     //Late Binding: Method call is resolved at runtime based on the actual object; e.g., method overriding.
     //static methods cannot be overridden as they are independent of objects of class
-    //Overloading and overriding does not apply to instance variable o
+    //Overloading and overriding does not apply to instance variable
 public class Polymorphism {
     //Polymorphism = Poly + Morphism
     //Poly means many and morphism means ways to represent
