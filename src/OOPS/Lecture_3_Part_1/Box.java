@@ -11,17 +11,19 @@ public class Box {
     //For Empty
     public Box() {
         //super(); Object class
+        //Super is used to call the parent class constructor
+        //Super cannot call the constructor in the same class
+        //this(-1,-1,-1); is a constructor that calls the parameterized constructor
         this.length=-1;
         this.width=-1;
         this.height=-1;
     }
     //Cube
     public Box(int length) {
-        this.length = length;
+        this.length=length;
         this.height=length;
         this.width=length;
     }
-
     //Cuboid
     public Box(int length,int width,int height){
         System.out.println("Parent class Constructor");
@@ -36,6 +38,6 @@ public class Box {
         this.height=box.height;
     }
     public void information(){
-        System.out.println("The information function is running");
+        System.out.println("The information function is running of Box class");
     }
 }
