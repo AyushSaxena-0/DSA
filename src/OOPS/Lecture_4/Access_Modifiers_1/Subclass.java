@@ -3,6 +3,7 @@ package OOPS.Lecture_4.Access_Modifiers_1;
 class Subclass extends A{
 
     public Subclass(int num, String name) {
+        //super() is used to call the constructor of the parent class in subclass
         super(num, name);
     }
 
