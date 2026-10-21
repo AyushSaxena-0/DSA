@@ -16,6 +16,7 @@ public class Subclass extends A {
         System.out.println(obj instanceof A);//true
         System.out.println(obj instanceof Subclass);//true
         //.getClass() tells us the information about class
-        System.out.println(obj.getClass().getName());//.getClass() is used to use many class method
+        System.out.println(obj.getClass().getName());// getClass() returns the runtime class of an object.
+        // getName() returns the fully qualified name of that class.
     }
 }

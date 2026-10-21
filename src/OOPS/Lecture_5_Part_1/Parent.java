@@ -19,13 +19,15 @@ public abstract class Parent {
         VALUE=100;
     }
     public Parent(int age) {
+        //Only to be called by subclass super() keyword
+        //It cannot be used to create an object of the abstract class
         this.age=age;
         VALUE=100;
     }
     abstract void carrer();
     abstract void partner();
     static void greeting(){
-        System.out.println("I am a static method in abstract class");
+        System.out.println("I am a static method in parent abstract class");
     }
     void normal(){
         System.out.println("This is a normal method in abstract class");
